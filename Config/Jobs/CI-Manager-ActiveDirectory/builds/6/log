@@ -1,0 +1,282 @@
+Started by user [8mha:AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/dLi1CL9kIzMpMTSnBLf/LySxNK0osRKAO/aVDHNAAAA[0mThibaultMontaufray
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/ThibaultMontaufray/Manager-ActiveDirectory
+ > C:\Program Files\Git\bin\git.exe init C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory # timeout=10
+Fetching upstream changes from https://github.com/ThibaultMontaufray/Manager-ActiveDirectory
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+using .gitcredentials to set credentials
+ > C:\Program Files\Git\bin\git.exe config --local credential.username ThibaultMontaufray # timeout=10
+ > C:\Program Files\Git\bin\git.exe config --local credential.helper store --file=\"C:\Windows\TEMP\git731233110273133936.credentials\" # timeout=10
+ > C:\Program Files\Git\bin\git.exe -c core.askpass=true fetch --tags --progress https://github.com/ThibaultMontaufray/Manager-ActiveDirectory +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe config --local --remove-section credential # timeout=10
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/ThibaultMontaufray/Manager-ActiveDirectory # timeout=10
+ > C:\Program Files\Git\bin\git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/ThibaultMontaufray/Manager-ActiveDirectory # timeout=10
+Fetching upstream changes from https://github.com/ThibaultMontaufray/Manager-ActiveDirectory
+using .gitcredentials to set credentials
+ > C:\Program Files\Git\bin\git.exe config --local credential.username ThibaultMontaufray # timeout=10
+ > C:\Program Files\Git\bin\git.exe config --local credential.helper store --file=\"C:\Windows\TEMP\git6273003076466274373.credentials\" # timeout=10
+ > C:\Program Files\Git\bin\git.exe -c core.askpass=true fetch --tags --progress https://github.com/ThibaultMontaufray/Manager-ActiveDirectory +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe config --local --remove-section credential # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 5e8272b850567f4f01161a3c9f0b791867e652f9 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 5e8272b850567f4f01161a3c9f0b791867e652f9
+ > C:\Program Files\Git\bin\git.exe rev-list 5e8272b850567f4f01161a3c9f0b791867e652f9 # timeout=10
+[CI-Manager-ActiveDirectory] $ cmd /c call C:\Windows\TEMP\hudson7037411231521476774.bat
+
+C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory>nuget.exe restore Manager_ActiveDirectory.sln 
+MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+Restoring NuGet package Tools4Libraries.1.0.4.
+Restoring NuGet package NUnit.3.2.1.
+Adding package 'Tools4Libraries.1.0.4' to folder 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages'
+Adding package 'NUnit.3.2.1' to folder 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages'
+Added package 'NUnit.3.2.1' to folder 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages'
+Added package 'Tools4Libraries.1.0.4' to folder 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages'
+
+NuGet Config files used:
+    C:\Windows\system32\config\systemprofile\AppData\Roaming\NuGet\NuGet.Config
+
+Feeds used:
+    C:\Windows\system32\config\systemprofile\AppData\Local\NuGet\Cache
+    C:\Windows\system32\config\systemprofile\.nuget\packages\
+    https://api.nuget.org/v3/index.json
+
+Installed:
+    2 package(s) to packages.config projects
+
+C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory>nuget.exe update Manager_ActiveDirectory.sln 
+Scanning for projects...
+MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+Found 3 projects with a packages.config file. (Manager_ActiveDirectory.csproj, Tools4Libraries.csproj, UnitTestProject.csproj)
+Feeds used:
+  https://api.nuget.org/v3/index.json
+
+Attempting to gather dependency information for multiple packages with respect to project 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj', targeting '.NETFramework,Version=v4.0'
+Attempting to resolve dependencies for multiple packages.
+Resolving actions install multiple packages
+Removed package 'Tools4Libraries 1.0.4' from 'packages.config'
+Removed file 'packages.config' from folder 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory'.
+Successfully uninstalled 'Tools4Libraries 1.0.4' from Manager_ActiveDirectory.csproj
+For adding package 'Tools4Libraries.1.0.10' to project 'Manager_ActiveDirectory.csproj' that targets 'net40'.
+For adding package 'Tools4Libraries.1.0.10' to project 'Manager_ActiveDirectory.csproj' that targets 'net40'.
+Adding package 'Tools4Libraries.1.0.10' to folder 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages'
+Added package 'Tools4Libraries.1.0.10' to folder 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages'
+Added package 'Tools4Libraries.1.0.10' to 'packages.config'
+Successfully installed 'Tools4Libraries 1.0.10' to Manager_ActiveDirectory.csproj
+Feeds used:
+  https://api.nuget.org/v3/index.json
+
+Attempting to gather dependency information for multiple packages with respect to project 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages\Tools4Libraries.1.0.4\Tools4Libraries.csproj', targeting '.NETFramework,Version=v4.0'
+Attempting to resolve dependencies for multiple packages.
+Resolving actions install multiple packages
+WARNING: Package 'ControlzEx.2.0.1.61' already exists in project 'Tools4Libraries.csproj'
+Successfully installed 'ControlzEx 2.0.1.61' to Tools4Libraries.csproj
+WARNING: Package 'Fluent.Ribbon.4.0.3.394' already exists in project 'Tools4Libraries.csproj'
+Successfully installed 'Fluent.Ribbon 4.0.3.394' to Tools4Libraries.csproj
+Feeds used:
+  https://api.nuget.org/v3/index.json
+
+Attempting to gather dependency information for multiple packages with respect to project 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj', targeting '.NETFramework,Version=v4.0'
+Attempting to resolve dependencies for multiple packages.
+Resolving actions install multiple packages
+Removed package 'NUnit 3.2.1' from 'packages.config'
+Removed file 'packages.config' from folder 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject'.
+Successfully uninstalled 'NUnit 3.2.1' from UnitTestProject.csproj
+For adding package 'NUnit.3.4.1' to project 'UnitTestProject.csproj' that targets 'net40'.
+For adding package 'NUnit.3.4.1' to project 'UnitTestProject.csproj' that targets 'net40'.
+Adding package 'NUnit.3.4.1' to folder 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages'
+Added package 'NUnit.3.4.1' to folder 'C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages'
+Added package 'NUnit.3.4.1' to 'packages.config'
+Successfully installed 'NUnit 3.4.1' to UnitTestProject.csproj
+
+C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory>exit 0 
+Path To MSBuild.exe: msbuild.exe
+Executing the command cmd.exe /C " msbuild.exe /t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount Manager_ActiveDirectory.csproj " && exit %%ERRORLEVEL%% from C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory
+[CI-Manager-ActiveDirectory] $ cmd.exe /C " msbuild.exe /t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount Manager_ActiveDirectory.csproj " && exit %%ERRORLEVEL%%
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 01/07/2016 14:00:36.
+     1>Project "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj" on node 1 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1097,5): warning MSB3644: The reference assemblies for framework ".NETFramework,Version=v4.0" were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+     1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Windows\Microsoft.NET\Framework\v4.0.30319\\mscorlib.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+     1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "System.Data", "AMD64". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+     1>GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       CoreCompile:
+         C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva- /reference:C:\Windows\Microsoft.NET\Framework\v4.0.30319\\mscorlib.dll /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.DataSetExtensions\v4.0_4.0.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll /reference:C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.DirectoryServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.dll /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll /reference:"C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages\Tools4Libraries.1.0.10\lib\4.0\Tools4Libraries.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\Manager_ActiveDirectory.dll /target:library /utf8output Controler\Interface_activedirectory.cs Model\Enterprise.cs Model\LDAP.cs Controler\DomainManager.cs Controler\Program.cs Properties\AssemblyInfo.cs View\ActiveDirectoryPreview.cs View\LoginForm.cs "C:\Windows\TEMP\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+       _CopyFilesMarkedCopyLocal:
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\\mscorlib.dll" to "lib\4.0\mscorlib.dll".
+         Copying file from "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages\Tools4Libraries.1.0.10\lib\4.0\Tools4Libraries.dll" to "lib\4.0\Tools4Libraries.dll".
+         Creating directory "lib\4.0\de".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\de\mscorlib.resources.dll" to "lib\4.0\de\mscorlib.resources.dll".
+         Creating directory "lib\4.0\es".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\es\mscorlib.resources.dll" to "lib\4.0\es\mscorlib.resources.dll".
+         Creating directory "lib\4.0\fr".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\fr\mscorlib.resources.dll" to "lib\4.0\fr\mscorlib.resources.dll".
+         Creating directory "lib\4.0\it".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\it\mscorlib.resources.dll" to "lib\4.0\it\mscorlib.resources.dll".
+         Creating directory "lib\4.0\nl".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\nl\mscorlib.resources.dll" to "lib\4.0\nl\mscorlib.resources.dll".
+         Creating directory "lib\4.0\pt-PT".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\pt-PT\mscorlib.resources.dll" to "lib\4.0\pt-PT\mscorlib.resources.dll".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\normidna.nlp" to "lib\4.0\normidna.nlp".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\normnfc.nlp" to "lib\4.0\normnfc.nlp".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\normnfd.nlp" to "lib\4.0\normnfd.nlp".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\normnfkc.nlp" to "lib\4.0\normnfkc.nlp".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\normnfkd.nlp" to "lib\4.0\normnfkd.nlp".
+       CopyFilesToOutputDirectory:
+         Copying file from "obj\Debug\Manager_ActiveDirectory.dll" to "lib\4.0\Manager_ActiveDirectory.dll".
+         Manager_ActiveDirectory -> C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\lib\4.0\Manager_ActiveDirectory.dll
+         Copying file from "obj\Debug\Manager_ActiveDirectory.pdb" to "lib\4.0\Manager_ActiveDirectory.pdb".
+     1>Done Building Project "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj" (build target(s)).
+
+Build succeeded.
+
+       "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj" (build target) (1) ->
+       (GetReferenceAssemblyPaths target) -> 
+         C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1097,5): warning MSB3644: The reference assemblies for framework ".NETFramework,Version=v4.0" were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+
+
+       "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj" (build target) (1) ->
+       (ResolveAssemblyReferences target) -> 
+         C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Windows\Microsoft.NET\Framework\v4.0.30319\\mscorlib.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+         C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "System.Data", "AMD64". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+
+    3 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.76
+Path To MSBuild.exe: msbuild.exe
+Executing the command cmd.exe /C " msbuild.exe /t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount UnitTestProject\UnitTestProject.csproj " && exit %%ERRORLEVEL%% from C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory
+[CI-Manager-ActiveDirectory] $ cmd.exe /C " msbuild.exe /t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount UnitTestProject\UnitTestProject.csproj " && exit %%ERRORLEVEL%%
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 01/07/2016 14:00:36.
+     1>Project "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj" on node 1 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1097,5): warning MSB3644: The reference assemblies for framework ".NETFramework,Version=v4.0" were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj]
+     1>PrepareForBuild:
+         Creating directory "bin\Debug\".
+         Creating directory "obj\Debug\".
+     1>Project "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj" (1) is building "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj" (2) on node 1 (default targets).
+     2>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1097,5): warning MSB3644: The reference assemblies for framework ".NETFramework,Version=v4.0" were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+     2>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Windows\Microsoft.NET\Framework\v4.0.30319\\mscorlib.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+     2>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "System.Data", "AMD64". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+     2>GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       CoreCompile:
+       Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+       CopyFilesToOutputDirectory:
+         Manager_ActiveDirectory -> C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\lib\4.0\Manager_ActiveDirectory.dll
+     2>Done Building Project "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj" (default targets).
+     1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Windows\Microsoft.NET\Framework\v4.0.30319\\mscorlib.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj]
+     1>GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       CoreCompile:
+         C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva- /reference:"C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\lib\4.0\Manager_ActiveDirectory.dll" /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll /reference:C:\Windows\Microsoft.NET\Framework\v4.0.30319\\mscorlib.dll /reference:"C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages\NUnit.3.4.1\lib\net40\nunit.framework.dll" /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll /reference:C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\UnitTestProject.dll /target:library /utf8output UnitTest.cs Properties\AssemblyInfo.cs "C:\Windows\TEMP\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+       _CopyFilesMarkedCopyLocal:
+         Copying file from "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\lib\4.0\Manager_ActiveDirectory.dll" to "bin\Debug\Manager_ActiveDirectory.dll".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\\mscorlib.dll" to "bin\Debug\mscorlib.dll".
+         Copying file from "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages\NUnit.3.4.1\lib\net40\nunit.framework.dll" to "bin\Debug\nunit.framework.dll".
+         Copying file from "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\lib\4.0\Manager_ActiveDirectory.pdb" to "bin\Debug\Manager_ActiveDirectory.pdb".
+         Copying file from "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\packages\NUnit.3.4.1\lib\net40\nunit.framework.xml" to "bin\Debug\nunit.framework.xml".
+         Creating directory "bin\Debug\de".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\de\mscorlib.resources.dll" to "bin\Debug\de\mscorlib.resources.dll".
+         Creating directory "bin\Debug\es".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\es\mscorlib.resources.dll" to "bin\Debug\es\mscorlib.resources.dll".
+         Creating directory "bin\Debug\fr".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\fr\mscorlib.resources.dll" to "bin\Debug\fr\mscorlib.resources.dll".
+         Creating directory "bin\Debug\it".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\it\mscorlib.resources.dll" to "bin\Debug\it\mscorlib.resources.dll".
+         Creating directory "bin\Debug\nl".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\nl\mscorlib.resources.dll" to "bin\Debug\nl\mscorlib.resources.dll".
+         Creating directory "bin\Debug\pt-PT".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\pt-PT\mscorlib.resources.dll" to "bin\Debug\pt-PT\mscorlib.resources.dll".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\normidna.nlp" to "bin\Debug\normidna.nlp".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\normnfc.nlp" to "bin\Debug\normnfc.nlp".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\normnfd.nlp" to "bin\Debug\normnfd.nlp".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\normnfkc.nlp" to "bin\Debug\normnfkc.nlp".
+         Copying file from "C:\Windows\Microsoft.NET\Framework\v4.0.30319\normnfkd.nlp" to "bin\Debug\normnfkd.nlp".
+       _CopyAppConfigFile:
+         Copying file from "App.config" to "bin\Debug\UnitTestProject.dll.config".
+       CopyFilesToOutputDirectory:
+         Copying file from "obj\Debug\UnitTestProject.dll" to "bin\Debug\UnitTestProject.dll".
+         UnitTestProject -> C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\bin\Debug\UnitTestProject.dll
+         Copying file from "obj\Debug\UnitTestProject.pdb" to "bin\Debug\UnitTestProject.pdb".
+     1>Done Building Project "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj" (build target(s)).
+
+Build succeeded.
+
+       "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj" (build target) (1) ->
+       (GetReferenceAssemblyPaths target) -> 
+         C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1097,5): warning MSB3644: The reference assemblies for framework ".NETFramework,Version=v4.0" were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj]
+
+
+       "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj" (build target) (1) ->
+       "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj" (default target) (2) ->
+         C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1097,5): warning MSB3644: The reference assemblies for framework ".NETFramework,Version=v4.0" were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+
+
+       "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj" (build target) (1) ->
+       "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj" (default target) (2) ->
+       (ResolveAssemblyReferences target) -> 
+         C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Windows\Microsoft.NET\Framework\v4.0.30319\\mscorlib.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+         C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "System.Data", "AMD64". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\Manager_ActiveDirectory.csproj]
+
+
+       "C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj" (build target) (1) ->
+         C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\Windows\Microsoft.NET\Framework\v4.0.30319\\mscorlib.dll", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project. [C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTestProject.csproj]
+
+    5 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.64
+[CI-Manager-ActiveDirectory] $ cmd /c call C:\Windows\TEMP\hudson8222334700411057197.bat
+
+C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory>nunit3-console.exe UnitTestProject\bin\Debug\UnitTestProject.dll  --result=TestResult.xml;format=nunit2 
+NUnit Console Runner 3.2.1 
+Copyright (C) 2016 Charlie Poole
+
+Runtime Environment
+   OS Version: Microsoft Windows NT 6.3.9600.0
+  CLR Version: 4.0.30319.42000
+
+Test Files
+    UnitTestProject\bin\Debug\UnitTestProject.dll
+
+
+Errors and Failures
+
+1) Failed : UnitTestProject.UnitTest.TestNewEnterprise
+
+at UnitTestProject.UnitTest.TestNewEnterprise() in C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTest.cs:line 25
+
+Run Settings
+    WorkDirectory: C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory
+    ImageRuntimeVersion: 4.0.30319
+    ImageTargetFrameworkName: .NETFramework,Version=v4.0
+    ImageRequiresX86: False
+    ImageRequiresDefaultAppDomainAssemblyResolver: False
+    NumberOfTestWorkers: 4
+
+Test Run Summary
+  Overall result: Failed
+  Test Count: 2, Passed: 1, Failed: 1, Inconclusive: 0, Skipped: 0
+    Failed Tests - Failures: 1, Errors: 0, Invalid: 0
+  Start time: 2016-07-01 12:00:38Z
+    End time: 2016-07-01 12:00:39Z
+    Duration: 0,329 seconds
+
+Results (nunit2) saved as TestResult.xml
+
+C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory>exit 1 
+Build step 'Execute Windows batch command' marked build as failure
+Skipping Cobertura coverage report as build was not UNSTABLE or better ...
+Recording NUnit tests results
+Finished: FAILURE

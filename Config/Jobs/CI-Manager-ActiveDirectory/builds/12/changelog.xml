@@ -1,0 +1,22 @@
+commit 93e1dce311cb55412b1b82406a21591b4f8086e8
+tree b41eebf960de6525076e6f545dd728733f2e3ed0
+parent 26f3f40ee1fede80bbca81007ac4870bb1d4f323
+author Thibault MONTAUFRAY <amostrack@gmail.com> 2016-07-11 14:18:50 +0200
+committer GitHub <noreply@github.com> 2016-07-11 14:18:50 +0200
+
+    Update UnitTest.cs
+
+
+
+:100644 100644 a702f37633da4397cb84bc4273d867fd31181d61 8fca943504671c6d45d579e0bc2850f1ee473edb M	UnitTestProject/UnitTest.cs
+commit 26f3f40ee1fede80bbca81007ac4870bb1d4f323
+tree 416c14b23b0e54086221477653e7bf9cdc2e07a0
+parent 09851a9d06eeefc6e2e147981d87bb6478ffe01d
+author Thibault MONTAUFRAY <amostrack@gmail.com> 2016-07-11 11:12:18 +0200
+committer GitHub <noreply@github.com> 2016-07-11 11:12:18 +0200
+
+    Create .codeclimate.yml
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 3d41e1aef9cdf37504985f2a06f991345df54d41 A	.codeclimate.yml

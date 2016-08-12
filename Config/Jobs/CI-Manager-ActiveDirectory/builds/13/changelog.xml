@@ -1,0 +1,59 @@
+commit 5953819bf10c68141e07007555cc7625eb89bb4c
+tree f8238982a318e6d898524786983547a1c0c15040
+parent 6b6a9e1480c266c0a14b5ead88308e5903877f6a
+author Thibault MONTAUFRAY <amostrack@gmail.com> 2016-07-12 10:48:15 +0200
+committer GitHub <noreply@github.com> 2016-07-12 10:48:15 +0200
+
+    Update .travis.yml
+
+
+
+:100644 100644 b9f9d8168c4c789f496ad81e7474f8df1e37a19c 1d6468e63848b255e0e8b024777edb16befcf0e4 M	.travis.yml
+commit 6b6a9e1480c266c0a14b5ead88308e5903877f6a
+tree bec50d3eb0b3bc659efa3b16726bc2eda07f44d5
+parent 9895ca5fc2dbc4f295cdcfa5d0f461c12d44280d
+author Thibault MONTAUFRAY <amostrack@gmail.com> 2016-07-12 10:41:43 +0200
+committer GitHub <noreply@github.com> 2016-07-12 10:41:43 +0200
+
+    Update README.md
+
+
+
+:100644 100644 9e24e319a49a5b15da75f4bc88976e0c4778f583 d3123bd4da6ac741bce9169cd1f96686f19e8672 M	README.md
+commit 9895ca5fc2dbc4f295cdcfa5d0f461c12d44280d
+tree 0d0402acf566682213caacdf57290bd217e81e82
+parent 8811c6b1062724230752b417d055c5a3791f0830
+author Thibault MONTAUFRAY <amostrack@gmail.com> 2016-07-12 10:41:01 +0200
+committer GitHub <noreply@github.com> 2016-07-12 10:41:01 +0200
+
+    Update README.md
+
+
+
+:100644 100644 462e201ffd29e2430d0eeed971b7669c2c569712 9e24e319a49a5b15da75f4bc88976e0c4778f583 M	README.md
+commit 8811c6b1062724230752b417d055c5a3791f0830
+tree bddbe0316ade855bde0440aefbb8de7632b126b0
+parent 2ad2d6cc6458ffa397e9bcd81e2985eb59c2dcff
+author Thibault MONTAUFRAY <amostrack@gmail.com> 2016-07-12 10:32:11 +0200
+committer GitHub <noreply@github.com> 2016-07-12 10:32:11 +0200
+
+    Update .codeclimate.yml
+
+
+
+:100644 100644 3d41e1aef9cdf37504985f2a06f991345df54d41 1b4289414c5960487be7b35dc6fce854911dd05c M	.codeclimate.yml
+commit 51bff184de4aae5882f5c4a8e9cafd897cb02ed9
+tree 722956cf2a8f3b0857fb3e3a7f9c255eccc9caee
+parent 93e1dce311cb55412b1b82406a21591b4f8086e8
+author Thibault MONTAUFRAY <amostrack@gmail.com> 2016-07-12 10:25:06 +0200
+committer GitHub <noreply@github.com> 2016-07-12 10:25:06 +0200
+
+    env
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 121376d2e58abebebec23d29bead4dc796988205 A	lib/4.0/Manager_ActiveDirectory.exe
+:000000 100644 0000000000000000000000000000000000000000 0155a80aec1d6dfb41f889ca01548b58a2e9127d A	lib/4.0/Manager_ActiveDirectory.pdb
+:000000 100644 0000000000000000000000000000000000000000 8f90da475a8319aa76856e089ccc9e517eeb134a A	lib/4.0/Manager_ActiveDirectory.vshost.exe
+:000000 100644 0000000000000000000000000000000000000000 f96b1d6b3fa078c224681c663f485501b44f10c1 A	lib/4.0/Manager_ActiveDirectory.vshost.exe.manifest
+:000000 100644 0000000000000000000000000000000000000000 ce61c4768cc54a7f24a3d9a03ef4b9e3c73ec6f2 A	lib/4.0/Tools4Libraries.pdb

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result plugin="junit@1.13">
+  <suites>
+    <suite>
+      <file>C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\temporary-junit-reports\TEST-UnitTest_1_0.xml</file>
+      <name>UnitTest</name>
+      <duration>0.071</duration>
+      <time>0.071</time>
+      <cases>
+        <case>
+          <duration>0.048</duration>
+          <className>UnitTest</className>
+          <testName>TestNewEnterprise</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>
+MESSAGE:
+
++++++++++++++++++++
+STACK TRACE:
+at UnitTestProject.UnitTest.TestNewEnterprise() in C:\Program Files (x86)\Jenkins\workspace\CI-Manager-ActiveDirectory\UnitTestProject\UnitTest.cs:line 25
+</errorStackTrace>
+          <failedSince>3</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>UnitTest</className>
+          <testName>TestUTRuns</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>0.071</duration>
+  <keepLongStdio>true</keepLongStdio>
+</result>

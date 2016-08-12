@@ -1,0 +1,11 @@
+commit d8635fa0f90b353e3af55d54a9bde3e6720a8b9e
+tree c771a0d84773c6d3541419d2ddf786f3823ce76d
+parent 5e8272b850567f4f01161a3c9f0b791867e652f9
+author Thibault MONTAUFRAY <amostrack@gmail.com> 2016-07-01 14:08:29 +0200
+committer GitHub <noreply@github.com> 2016-07-01 14:08:29 +0200
+
+    Update Enterprise.cs
+
+
+
+:100644 100644 04994aab1b5ef32ec15a0abcb997fb30a6fcd5f3 d72e2364ff53af7ff559d114d2021beafa3694e9 M	Model/Enterprise.cs
