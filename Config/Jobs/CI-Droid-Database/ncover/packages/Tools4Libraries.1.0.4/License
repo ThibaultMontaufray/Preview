@@ -1,0 +1,44 @@
+SERVODROID.COM SOFTWARE LICENSE TERMS
+
+The MIT License (MIT)
+Copyright (c) 2015 Servodroid Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+----------------------------------------------------------------------------
+
+READ CAREFULLY BEFORE USING LIBRARIES
+By using the servOdroid libraries (referred also as PRODUCT or "The software"), you are accepting this License Agreement. 
+
+I. GENERAL PROVISIONS/OWNERSHIP
+All copyrights to servOdroid libraries (referred as PRODUCT) are exclusively owned by servodroid.com (referred as AUTHOR).
+The AUTHOR represents and warrants that the PRODUCT and each part and component of the PRODUCT was (or will be) developed by the AUTHOR or its employees or with permission from the original authors and that no parts of the PRODUCT are or were copied from the work of any other person or company without permission for redistribution.
+The AUTHOR represents and warrants that it is the legal owner of and has full right, title and interest in the PRODUCT, and that AUTHOR currently is the legal owner of distribution rights for the PRODUCT.  AUTHOR further warrants to you that AUTHOR has any and all necessary authority to (i) enter into this License Agreement and (ii) make any and all grants, rights and/or licenses contained herein.
+
+II. LICENSING
+AUTHOR grants to you (as a person or company) a non-exclusive license to make and use copies of the PRODUCT in the manner provided below.  
+The PRODUCT is licensed, not sold.
+
+III. DISTRIBUTION RIGHTS
+The list of redistributable parts of the PRODUCT is limited by the following items:
+ - all assembly files (DLLs) created by AUTHOR and placed into sub-folders of \ASSEMBLIES folder during installation of the PRODUCT;
+ - any data files created by servOdroid library and/or related tools and utilities (such as Data Model Editor). For example: query files (.xml) or data model files (.xml).
+
+You may freely distribute any of PRODUCT parts that are designated as "redistributable" with your software products if you comply with the terms below.
+(1) The original binary code of redistributable parts (assbmlies and executables) remain unmodified. Any intrusion in their work (disassembling, cracking etc) is not allowed!
+(2) You distribute only the portions of the PRODUCT designated as "redistributable".
+(3) Your software product may not, in the reasonable opinion of AUTHOR, directly compete in form and function with servOdroid.
+(4) You agree to indemnify AUTHOR from any and all claims or lawsuits including lawyer's fees that can arise or result from the use or distribution of your software product(s) that created using servOdroid.
+(5) You distribute the "redistributable" parts of PRODUCT only in conjunction with your own software product(s) which has(have) reasonably significant functional additions to basic functionality provided by servOdroid;
+
+You may freely distribute (print, publish, post on forums or newsgroups, etc) any code examples that use servOdroid API (Application Programming Interface) including sample projects installed with servOdroid.
+
+IV. TERMINATION OF THE AGREEMENT
+AUTHOR may terminate this license agreement if you (as license owner) fail to comply with the terms and conditions of this agreement and do not cure any failure to comply within thirty (30) days from notice by AUTHOR. In such event, you must destroy all copies of the PRODUCT.  You may terminate this license at any time by destroying all copies of the PRODUCT. 
+
+V. LIMITED WARRANTY 
+PRODUCT is distributed "AS IS". The AUTHOR expressly disclaims any warranty for the PRODUCT either express or implied. The AUTHOR is not liable for any damage, caused by use or inability to use the PRODUCT. 

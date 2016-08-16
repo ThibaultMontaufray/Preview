@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{D2C821F1-1CE1-4B0B-B87A-D59B0AE062A0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Tools4Libraries</RootNamespace>
+    <AssemblyName>Tools4Libraries</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Amos\AppData\Roaming\ICSharpCode/SharpDevelop4.1\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>lib\4.0\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlzEx, Version=2.0.1.61, Culture=neutral, PublicKeyToken=f08b075e934b7045, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.2.0.1.61\lib\net45\ControlzEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Fluent, Version=4.0.3.394, Culture=neutral, PublicKeyToken=3e436e32a8c5546f, processorArchitecture=MSIL">
+      <HintPath>packages\Fluent.Ribbon.4.0.3.394\lib\net45\Fluent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.2.0.1.61\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Graphics\CCBoxItem.cs" />
+    <Compile Include="Graphics\CheckedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Graphics\Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphics\Window.Designer.cs">
+      <DependentUpon>Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics\window_classic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphics\window_classic.Designer.cs">
+      <DependentUpon>window_classic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics\window_jarvis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphics\window_jarvis.Designer.cs">
+      <DependentUpon>window_jarvis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AppliParams.cs" />
+    <Compile Include="Model\ComboBoxItem.cs" />
+    <Compile Include="Model\ComboCollection.cs" />
+    <Compile Include="Graphics\window_tile_postit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Graphics\window_tile_postit.Designer.cs">
+      <DependentUpon>window_tile_postit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics\window_tile_round_border.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Graphics\window_tile_round_border.Designer.cs">
+      <DependentUpon>window_tile_round_border.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics\window_dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphics\window_dialog.Designer.cs">
+      <DependentUpon>window_dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics\ImagedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Params.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics\window_black.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphics\window_black.Designer.cs">
+      <DependentUpon>window_black.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Dialog.cs" />
+    <Compile Include="Model\GPInterface.cs" />
+    <Compile Include="Model\Language.cs" />
+    <Compile Include="Model\Log.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\ToolBarEventArgs.cs" />
+    <Compile Include="Graphics\ToolStripMenuManager.cs" />
+    <Compile Include="Graphics\window_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphics\window_popup.Designer.cs">
+      <DependentUpon>window_popup.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Graphics\window_classic.resx">
+      <DependentUpon>window_classic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphics\window_jarvis.resx">
+      <DependentUpon>window_jarvis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphics\window_tile_postit.resx">
+      <DependentUpon>window_tile_postit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphics\window_tile_round_border.resx">
+      <DependentUpon>window_tile_round_border.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphics\window_dialog.resx">
+      <DependentUpon>window_dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphics\window_black.resx">
+      <DependentUpon>window_black.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphics\window_popup.resx">
+      <DependentUpon>window_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource.resx" />
+    <EmbeddedResource Include="Resources\ResourceIconSet16Default.resx" />
+    <EmbeddedResource Include="Resources\ResourceIconSet32Default.resx" />
+    <EmbeddedResource Include="Resources\ResourceMenu.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\closeButton.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeButton_Hover.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_tile_round_border\WinBottomLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_tile_round_border\WinBottomMiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_tile_round_border\WinBottomRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_tile_round_border\WinLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_tile_round_border\WinRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_tile_round_border\WinTopLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_tile_round_border\WinTopMiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_tile_round_border\WinTopRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\IconSetDefault\16\application_side_tree.png" />
+    <Content Include="Resources\IconSetDefault\16\arrow_ko_red.png" />
+    <Content Include="Resources\IconSetDefault\16\arrow_left.png" />
+    <Content Include="Resources\IconSetDefault\16\arrow_ok_green.png" />
+    <Content Include="Resources\IconSetDefault\16\arrow_ok_yellow.png" />
+    <Content Include="Resources\IconSetDefault\16\arrow_right.png" />
+    <Content Include="Resources\IconSetDefault\16\balance.png" />
+    <Content Include="Resources\IconSetDefault\16\bank.png" />
+    <Content Include="Resources\IconSetDefault\16\barchart16.png" />
+    <Content Include="Resources\IconSetDefault\16\bullet_toggle_minus.png" />
+    <Content Include="Resources\IconSetDefault\16\bullet_toggle_minus_multiple.png" />
+    <Content Include="Resources\IconSetDefault\16\bullet_toggle_plus.png" />
+    <Content Include="Resources\IconSetDefault\16\bullet_toggle_plus_multiple.png" />
+    <Content Include="Resources\IconSetDefault\16\camera.png" />
+    <Content Include="Resources\IconSetDefault\16\cancel.png" />
+    <Content Include="Resources\IconSetDefault\16\coins16.png" />
+    <Content Include="Resources\IconSetDefault\16\coins_in_hand.png" />
+    <Content Include="Resources\IconSetDefault\16\color_wheel.png" />
+    <Content Include="Resources\IconSetDefault\16\comment_code_add.png" />
+    <Content Include="Resources\IconSetDefault\16\comment_code_remove.png" />
+    <Content Include="Resources\IconSetDefault\16\conversion_of_currency16.png" />
+    <Content Include="Resources\IconSetDefault\16\CurrencyDollar16.png" />
+    <Content Include="Resources\IconSetDefault\16\CurrencyEuro16.png" />
+    <Content Include="Resources\IconSetDefault\16\CurrencyOther16.png" />
+    <Content Include="Resources\IconSetDefault\16\CurrencyPound16.png" />
+    <Content Include="Resources\IconSetDefault\16\CurrencyRupee16.png" />
+    <Content Include="Resources\IconSetDefault\16\CurrencyYen16.png" />
+    <Content Include="Resources\IconSetDefault\16\delete.png" />
+    <Content Include="Resources\IconSetDefault\16\document_index.png" />
+    <Content Include="Resources\IconSetDefault\16\document_page.png" />
+    <Content Include="Resources\IconSetDefault\16\document_page_last.png" />
+    <Content Include="Resources\IconSetDefault\16\extract_foreground_objects.png" />
+    <Content Include="Resources\IconSetDefault\16\find.png" />
+    <Content Include="Resources\IconSetDefault\16\gift_add.png" />
+    <Content Include="Resources\IconSetDefault\16\importExcel16.png" />
+    <Content Include="Resources\IconSetDefault\16\keyboard_magnify.png" />
+    <Content Include="Resources\IconSetDefault\16\mvtAdd16.png" />
+    <Content Include="Resources\IconSetDefault\16\newProject16.png" />
+    <Content Include="Resources\IconSetDefault\16\openProjec16.png" />
+    <Content Include="Resources\IconSetDefault\16\page_edit.png" />
+    <Content Include="Resources\IconSetDefault\16\page_key.png" />
+    <Content Include="Resources\IconSetDefault\16\piechart16.png" />
+    <Content Include="Resources\IconSetDefault\16\pilcrow.png" />
+    <Content Include="Resources\IconSetDefault\16\printer.png" />
+    <Content Include="Resources\IconSetDefault\16\resultset_next.png" />
+    <Content Include="Resources\IconSetDefault\16\script_go.png" />
+    <Content Include="Resources\IconSetDefault\16\stop.png" />
+    <Content Include="Resources\IconSetDefault\16\table_delete.png" />
+    <Content Include="Resources\IconSetDefault\16\table_edit.png" />
+    <Content Include="Resources\IconSetDefault\16\text_drama.png" />
+    <Content Include="Resources\IconSetDefault\16\text_horizontalrule.png" />
+    <Content Include="Resources\IconSetDefault\16\text_indent.png" />
+    <Content Include="Resources\IconSetDefault\16\text_indent_remove.png" />
+    <Content Include="Resources\IconSetDefault\16\text_linespacing.png" />
+    <Content Include="Resources\IconSetDefault\16\text_replace.png" />
+    <Content Include="Resources\IconSetDefault\16\user.png" />
+    <Content Include="Resources\IconSetDefault\16\userAdd16.png" />
+    <Content Include="Resources\IconSetDefault\16\user_add.png" />
+    <Content Include="Resources\IconSetDefault\16\user_astronaut.png" />
+    <Content Include="Resources\IconSetDefault\16\user_batman.png" />
+    <Content Include="Resources\IconSetDefault\16\user_blondy.png" />
+    <Content Include="Resources\IconSetDefault\16\user_catwomen.png" />
+    <Content Include="Resources\IconSetDefault\16\user_chief.png" />
+    <Content Include="Resources\IconSetDefault\16\user_chief_female.png" />
+    <Content Include="Resources\IconSetDefault\16\user_clown.png" />
+    <Content Include="Resources\IconSetDefault\16\user_comment.png" />
+    <Content Include="Resources\IconSetDefault\16\user_delete.png" />
+    <Content Include="Resources\IconSetDefault\16\user_edit.png" />
+    <Content Include="Resources\IconSetDefault\16\user_female.png" />
+    <Content Include="Resources\IconSetDefault\16\user_go.png" />
+    <Content Include="Resources\IconSetDefault\16\user_gray.png" />
+    <Content Include="Resources\IconSetDefault\16\user_green.png" />
+    <Content Include="Resources\IconSetDefault\16\user_jew.png" />
+    <Content Include="Resources\IconSetDefault\16\user_king.png" />
+    <Content Include="Resources\IconSetDefault\16\user_maid.png" />
+    <Content Include="Resources\IconSetDefault\16\user_medical.png" />
+    <Content Include="Resources\IconSetDefault\16\user_medical_female.png" />
+    <Content Include="Resources\IconSetDefault\16\user_ninja.png" />
+    <Content Include="Resources\IconSetDefault\16\user_nude.png" />
+    <Content Include="Resources\IconSetDefault\16\user_nude_female.png" />
+    <Content Include="Resources\IconSetDefault\16\user_orange.png" />
+    <Content Include="Resources\IconSetDefault\16\user_policeman.png" />
+    <Content Include="Resources\IconSetDefault\16\user_police_england.png" />
+    <Content Include="Resources\IconSetDefault\16\user_police_female.png" />
+    <Content Include="Resources\IconSetDefault\16\user_queen.png" />
+    <Content Include="Resources\IconSetDefault\16\user_red.png" />
+    <Content Include="Resources\IconSetDefault\16\user_sailor.png" />
+    <Content Include="Resources\IconSetDefault\16\user_silhouette.png" />
+    <Content Include="Resources\IconSetDefault\16\user_soldier.png" />
+    <Content Include="Resources\IconSetDefault\16\user_student.png" />
+    <Content Include="Resources\IconSetDefault\16\user_student_female.png" />
+    <Content Include="Resources\IconSetDefault\16\user_suit.png" />
+    <Content Include="Resources\IconSetDefault\16\user_vietnamese.png" />
+    <Content Include="Resources\IconSetDefault\16\user_zorro.png" />
+    <Content Include="Resources\IconSetDefault\32\application_side_tree.png" />
+    <Content Include="Resources\IconSetDefault\32\balance_unbalance.png" />
+    <Content Include="Resources\IconSetDefault\32\balance_unbalance_checked.png" />
+    <Content Include="Resources\IconSetDefault\32\balance_unbalance_unchecked.png" />
+    <Content Include="Resources\IconSetDefault\32\bank.png" />
+    <Content Include="Resources\IconSetDefault\32\barchart32.png" />
+    <Content Include="Resources\IconSetDefault\32\books.png" />
+    <Content Include="Resources\IconSetDefault\32\book_open.png" />
+    <Content Include="Resources\IconSetDefault\32\camera.png" />
+    <Content Include="Resources\IconSetDefault\32\coins32.png" />
+    <Content Include="Resources\IconSetDefault\32\conversion_of_currency32.png" />
+    <Content Include="Resources\IconSetDefault\32\CurrencyDollar16.png" />
+    <Content Include="Resources\IconSetDefault\32\decimal_more.png" />
+    <Content Include="Resources\IconSetDefault\32\directory_listing.png" />
+    <Content Include="Resources\IconSetDefault\32\directory_listing_checked.png" />
+    <Content Include="Resources\IconSetDefault\32\directory_listing_unchecked.png" />
+    <Content Include="Resources\IconSetDefault\32\document_index.png" />
+    <Content Include="Resources\IconSetDefault\32\document_inspect.png" />
+    <Content Include="Resources\IconSetDefault\32\document_page.png" />
+    <Content Include="Resources\IconSetDefault\32\document_page_last.png" />
+    <Content Include="Resources\IconSetDefault\32\file_extension_bin.png" />
+    <Content Include="Resources\IconSetDefault\32\file_extension_csv.png" />
+    <Content Include="Resources\IconSetDefault\32\file_extension_html.png" />
+    <Content Include="Resources\IconSetDefault\32\file_extension_pdf.png" />
+    <Content Include="Resources\IconSetDefault\32\file_extension_txt.png" />
+    <Content Include="Resources\IconSetDefault\32\importExcel32.png" />
+    <Content Include="Resources\IconSetDefault\32\insert_element.png" />
+    <Content Include="Resources\IconSetDefault\32\key_a.png" />
+    <Content Include="Resources\IconSetDefault\32\key_b.png" />
+    <Content Include="Resources\IconSetDefault\32\key_e.png" />
+    <Content Include="Resources\IconSetDefault\32\key_x.png" />
+    <Content Include="Resources\IconSetDefault\32\large_tiles.png" />
+    <Content Include="Resources\IconSetDefault\32\mvtAdd32.png" />
+    <Content Include="Resources\IconSetDefault\32\newProject32.png" />
+    <Content Include="Resources\IconSetDefault\32\openProject32.png" />
+    <Content Include="Resources\IconSetDefault\32\page_white_code.png" />
+    <Content Include="Resources\IconSetDefault\32\participation_rate.png" />
+    <Content Include="Resources\IconSetDefault\32\participation_rate_checked.png" />
+    <Content Include="Resources\IconSetDefault\32\participation_rate_unchecked.png" />
+    <Content Include="Resources\IconSetDefault\32\piechart32.png" />
+    <Content Include="Resources\IconSetDefault\32\pilcrow.png" />
+    <Content Include="Resources\IconSetDefault\32\printer.png" />
+    <Content Include="Resources\IconSetDefault\32\small_business.png" />
+    <Content Include="Resources\IconSetDefault\32\sort_columns.png" />
+    <Content Include="Resources\IconSetDefault\32\statistics.png" />
+    <Content Include="Resources\IconSetDefault\32\statistics_checked.png" />
+    <Content Include="Resources\IconSetDefault\32\statistics_unchecked.png" />
+    <Content Include="Resources\IconSetDefault\32\table_money.png" />
+    <Content Include="Resources\IconSetDefault\32\table_money_checked.png" />
+    <Content Include="Resources\IconSetDefault\32\table_money_unchecked.png" />
+    <Content Include="Resources\IconSetDefault\32\text_drama.png" />
+    <Content Include="Resources\IconSetDefault\32\text_horizontalrule.png" />
+    <Content Include="Resources\IconSetDefault\32\user.png" />
+    <Content Include="Resources\IconSetDefault\32\userAdd32.png" />
+    <Content Include="Resources\IconSetDefault\32\user_add.png" />
+    <Content Include="Resources\IconSetDefault\32\user_astronaut.png" />
+    <Content Include="Resources\IconSetDefault\32\user_batman.png" />
+    <Content Include="Resources\IconSetDefault\32\user_blondy.png" />
+    <Content Include="Resources\IconSetDefault\32\user_catwomen.png" />
+    <Content Include="Resources\IconSetDefault\32\user_chief.png" />
+    <Content Include="Resources\IconSetDefault\32\user_chief_female.png" />
+    <Content Include="Resources\IconSetDefault\32\user_clown.png" />
+    <Content Include="Resources\IconSetDefault\32\user_comment.png" />
+    <Content Include="Resources\IconSetDefault\32\user_delete.png" />
+    <Content Include="Resources\IconSetDefault\32\user_edit.png" />
+    <Content Include="Resources\IconSetDefault\32\user_female.png" />
+    <Content Include="Resources\IconSetDefault\32\user_go.png" />
+    <Content Include="Resources\IconSetDefault\32\user_gray.png" />
+    <Content Include="Resources\IconSetDefault\32\user_green.png" />
+    <Content Include="Resources\IconSetDefault\32\user_jew.png" />
+    <Content Include="Resources\IconSetDefault\32\user_king.png" />
+    <Content Include="Resources\IconSetDefault\32\user_maid.png" />
+    <Content Include="Resources\IconSetDefault\32\user_medical.png" />
+    <Content Include="Resources\IconSetDefault\32\user_medical_female.png" />
+    <Content Include="Resources\IconSetDefault\32\user_ninja.png" />
+    <Content Include="Resources\IconSetDefault\32\user_nude.png" />
+    <Content Include="Resources\IconSetDefault\32\user_nude_female.png" />
+    <Content Include="Resources\IconSetDefault\32\user_orange.png" />
+    <Content Include="Resources\IconSetDefault\32\user_policeman.png" />
+    <Content Include="Resources\IconSetDefault\32\user_police_england.png" />
+    <Content Include="Resources\IconSetDefault\32\user_police_female.png" />
+    <Content Include="Resources\IconSetDefault\32\user_queen.png" />
+    <Content Include="Resources\IconSetDefault\32\user_red.png" />
+    <Content Include="Resources\IconSetDefault\32\user_sailor.png" />
+    <Content Include="Resources\IconSetDefault\32\user_silhouette.png" />
+    <Content Include="Resources\IconSetDefault\32\user_soldier.png" />
+    <Content Include="Resources\IconSetDefault\32\user_student.png" />
+    <Content Include="Resources\IconSetDefault\32\user_student_female.png" />
+    <Content Include="Resources\IconSetDefault\32\user_suit.png" />
+    <Content Include="Resources\IconSetDefault\32\user_vietnamese.png" />
+    <Content Include="Resources\IconSetDefault\32\user_zorro.png" />
+    <Content Include="Resources\IconSetDefault\32\vcard.png" />
+    <EmbeddedResource Include="Resources\MenuDefault\TabCalendar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabCalendarHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabCalendarSelected.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabFilm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabFilmHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabFilmSelected.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabFinancial.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabFinancialHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabFinancialSelected.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabMainMenu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabMainMenuHover .png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabMainMenuSelected.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabMonitor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabMonitorHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabMonitorSelected.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabMusic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabMusicHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabMusicSelected.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabPage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabPageHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabPageSelected.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabPicture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabPictureHover.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabPictureSelected.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MenuDefault\TabVoid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Resources\window_tile_postit\WinBottomLeft.png" />
+    <Content Include="Resources\window_tile_postit\WinBottomMiddle.png" />
+    <Content Include="Resources\window_tile_postit\WinBottomRight.png" />
+    <Content Include="Resources\window_tile_postit\WinLeftMiddle.png" />
+    <Content Include="Resources\window_tile_postit\WinRightMiddle.png" />
+    <Content Include="Resources\window_tile_postit\WinTopLeft.png" />
+    <Content Include="Resources\window_tile_postit\WinTopMiddle.png" />
+    <Content Include="Resources\window_tile_postit\WinTopRight.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>
