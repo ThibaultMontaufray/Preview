@@ -41,12 +41,12 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.BatchFile>
-      <command>nuget.exe restore Manager_Litterature.sln&#xd;
-nuget.exe update Manager_Litterature.sln</command>
+      <command>nuget.exe restore Droid_Litterature.sln&#xd;
+nuget.exe update Droid_Litterature.sln</command>
     </hudson.tasks.BatchFile>
     <hudson.plugins.msbuild.MsBuildBuilder plugin="msbuild@1.25">
       <msBuildName>(Default)</msBuildName>
-      <msBuildFile>Manager_Litterature.csproj</msBuildFile>
+      <msBuildFile>Droid_Litterature.csproj</msBuildFile>
       <cmdLineArgs>/t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount</cmdLineArgs>
       <buildVariablesAsProperties>false</buildVariablesAsProperties>
       <continueOnBuildFailure>false</continueOnBuildFailure>

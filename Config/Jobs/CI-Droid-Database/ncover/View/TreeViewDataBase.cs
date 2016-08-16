@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data;
 
-namespace Manager_database
+namespace Droid_database
 {
     public delegate TreeViewDataBaseEventHander TreeViewDataBaseEventHander(string DBNodeVal);
     public class TreeViewDataBase : TreeView
@@ -45,7 +45,7 @@ namespace Manager_database
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreeViewDataBase));
+            System.ComponentModel.ComponentResourceDroid resources = new System.ComponentModel.ComponentResourceDroid(typeof(TreeViewDataBase));
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 

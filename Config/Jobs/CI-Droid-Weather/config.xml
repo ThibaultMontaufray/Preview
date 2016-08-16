@@ -86,12 +86,12 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.BatchFile>
-      <command>nuget.exe restore Manager_Weather.sln&#xd;
-nuget.exe update Manager_Weather.sln</command>
+      <command>nuget.exe restore Droid_Weather.sln&#xd;
+nuget.exe update Droid_Weather.sln</command>
     </hudson.tasks.BatchFile>
     <hudson.plugins.msbuild.MsBuildBuilder plugin="msbuild@1.25">
       <msBuildName>(Default)</msBuildName>
-      <msBuildFile>Manager_Weather.csproj</msBuildFile>
+      <msBuildFile>Droid_Weather.csproj</msBuildFile>
       <cmdLineArgs>/t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount</cmdLineArgs>
       <buildVariablesAsProperties>false</buildVariablesAsProperties>
       <continueOnBuildFailure>false</continueOnBuildFailure>

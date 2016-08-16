@@ -1,6 +1,6 @@
-﻿namespace Manager_database
+﻿namespace Droid_database
 {
-    partial class DBManager
+    partial class DBDroid
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DBManager));
+            System.ComponentModel.ComponentResourceDroid resources = new System.ComponentModel.ComponentResourceDroid(typeof(DBDroid));
             this.dataGridViewPreview = new System.Windows.Forms.DataGridView();
             this.splitContainerQuery = new System.Windows.Forms.SplitContainer();
             this.buttonSetting = new System.Windows.Forms.Button();
@@ -158,13 +158,13 @@
             this.treeViewDataBase.Size = new System.Drawing.Size(157, 571);
             this.treeViewDataBase.TabIndex = 0;
             // 
-            // DBManager
+            // DBDroid
             // 
             this.ClientSize = new System.Drawing.Size(794, 571);
             this.Controls.Add(this.splitContainerNavigation);
-            this.Name = "DBManager";
+            this.Name = "DBDroid";
             this.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Text = "DBManager";
+            this.Text = "DBDroid";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPreview)).EndInit();
             this.splitContainerQuery.Panel1.ResumeLayout(false);
             this.splitContainerQuery.Panel1.PerformLayout();

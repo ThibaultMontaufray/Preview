@@ -87,7 +87,7 @@
   <builders>
     <hudson.plugins.msbuild.MsBuildBuilder plugin="msbuild@1.25">
       <msBuildName>(Default)</msBuildName>
-      <msBuildFile>Manager_Droid.csproj</msBuildFile>
+      <msBuildFile>Droid_Droid.csproj</msBuildFile>
       <cmdLineArgs>/t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount</cmdLineArgs>
       <buildVariablesAsProperties>false</buildVariablesAsProperties>
       <continueOnBuildFailure>false</continueOnBuildFailure>

@@ -86,12 +86,12 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.BatchFile>
-      <command>nuget.exe restore Manager_Audio.sln&#xd;
-nuget.exe update Manager_Audio.sln</command>
+      <command>nuget.exe restore Droid_Audio.sln&#xd;
+nuget.exe update Droid_Audio.sln</command>
     </hudson.tasks.BatchFile>
     <hudson.plugins.msbuild.MsBuildBuilder plugin="msbuild@1.25">
       <msBuildName>(Default)</msBuildName>
-      <msBuildFile>Manager_Audio.csproj</msBuildFile>
+      <msBuildFile>Droid_Audio.csproj</msBuildFile>
       <cmdLineArgs>/t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount</cmdLineArgs>
       <buildVariablesAsProperties>false</buildVariablesAsProperties>
       <continueOnBuildFailure>false</continueOnBuildFailure>

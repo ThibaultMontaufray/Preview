@@ -86,12 +86,12 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.BatchFile>
-      <command>nuget.exe restore Manager_Logistique.sln&#xd;
-nuget.exe update Manager_Logistique.sln</command>
+      <command>nuget.exe restore Droid_Logistique.sln&#xd;
+nuget.exe update Droid_Logistique.sln</command>
     </hudson.tasks.BatchFile>
     <hudson.plugins.msbuild.MsBuildBuilder plugin="msbuild@1.25">
       <msBuildName>(Default)</msBuildName>
-      <msBuildFile>Manager_Logistique.csproj</msBuildFile>
+      <msBuildFile>Droid_Logistique.csproj</msBuildFile>
       <cmdLineArgs>/t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount</cmdLineArgs>
       <buildVariablesAsProperties>false</buildVariablesAsProperties>
       <continueOnBuildFailure>false</continueOnBuildFailure>

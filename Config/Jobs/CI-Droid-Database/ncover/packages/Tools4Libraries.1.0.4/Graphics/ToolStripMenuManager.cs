@@ -12,9 +12,9 @@ using System.Windows.Forms;
 namespace Tools4Libraries
 {
 	/// <summary>
-	/// Description of ToolStripMenuManager.
+	/// Description of ToolStripMenuDroid.
 	/// </summary>
-	public class ToolStripMenuManager
+	public class ToolStripMenuDroid
     {
 		#region Attributes
 		private Panel currentTabPage;
@@ -36,7 +36,7 @@ namespace Tools4Libraries
 		#endregion
 		
 		#region Constructor
-		public ToolStripMenuManager()
+		public ToolStripMenuDroid()
 		{
 			//this.Left = 330;	
 		}

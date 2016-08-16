@@ -86,12 +86,12 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.BatchFile>
-      <command>nuget.exe restore Manager_Explorer.sln&#xd;
-nuget.exe update Manager_Explorer.sln</command>
+      <command>nuget.exe restore Droid_Explorer.sln&#xd;
+nuget.exe update Droid_Explorer.sln</command>
     </hudson.tasks.BatchFile>
     <hudson.plugins.msbuild.MsBuildBuilder plugin="msbuild@1.25">
       <msBuildName>(Default)</msBuildName>
-      <msBuildFile>Manager_explorer.csproj</msBuildFile>
+      <msBuildFile>Droid_explorer.csproj</msBuildFile>
       <cmdLineArgs>/t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount</cmdLineArgs>
       <buildVariablesAsProperties>false</buildVariablesAsProperties>
       <continueOnBuildFailure>false</continueOnBuildFailure>

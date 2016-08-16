@@ -1835,7 +1835,7 @@
             <summary>
             Represents a column in a select list that should be printed only if it is later used.
             Such columns get added by <see cref="M:System.Data.Entity.SqlServer.SqlGen.SqlGenerator.AddDefaultColumns(System.Data.Entity.SqlServer.SqlGen.SqlSelectStatement)"/>.
-            The SymbolUsageManager associated with the OptionalColumn has the information whether the column
+            The SymbolUsageDroid associated with the OptionalColumn has the information whether the column
             has been used based on its symbol.
             </summary>
         </member>
@@ -3781,7 +3781,7 @@
         <member name="M:System.Data.Entity.SqlServer.SqlGen.SqlGenerator.CreateOptionalColumn(System.Data.Entity.SqlServer.SqlGen.Symbol,System.Data.Entity.SqlServer.SqlGen.Symbol)">
             <summary>
             Creates an optional column and registers the corresponding symbol with
-            the optionalColumnUsageManager it has not already been registered.
+            the optionalColumnUsageDroid it has not already been registered.
             </summary>
         </member>
         <member name="M:System.Data.Entity.SqlServer.SqlGen.SqlGenerator.AddColumn(System.Data.Entity.SqlServer.SqlGen.SqlSelectStatement,System.Data.Entity.SqlServer.SqlGen.Symbol,System.Collections.Generic.List{System.Data.Entity.SqlServer.SqlGen.Symbol},System.Collections.Generic.Dictionary{System.String,System.Data.Entity.SqlServer.SqlGen.Symbol},System.String)">
@@ -4231,7 +4231,7 @@
             or things to be renamed.
             </summary>
         </member>
-        <member name="T:System.Data.Entity.SqlServer.SqlGen.SymbolUsageManager">
+        <member name="T:System.Data.Entity.SqlServer.SqlGen.SymbolUsageDroid">
             <summary>
             Tracks the usage of symbols.
             When registering a symbol with the usage Droid if an input symbol is specified,

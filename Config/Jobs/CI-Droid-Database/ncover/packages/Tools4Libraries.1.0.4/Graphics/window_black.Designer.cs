@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(window_black));
+            System.ComponentModel.ComponentResourceDroid resources = new System.ComponentModel.ComponentResourceDroid(typeof(window_black));
             this.panelHead = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();

@@ -8,8 +8,8 @@
     <ProjectGuid>{D2C821F1-1CE1-4B0B-B87A-D59B0AE062A0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Manager_database</RootNamespace>
-    <AssemblyName>Manager_database</AssemblyName>
+    <RootNamespace>Droid_database</RootNamespace>
+    <AssemblyName>Droid_database</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -78,11 +78,11 @@
     <Compile Include="SqlCeAdapter.cs" />
     <Compile Include="MySqlAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\DBManager.cs">
+    <Compile Include="View\DBDroid.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="View\DBManager.Designer.cs">
-      <DependentUpon>DBManager.cs</DependentUpon>
+    <Compile Include="View\DBDroid.Designer.cs">
+      <DependentUpon>DBDroid.cs</DependentUpon>
     </Compile>
     <Compile Include="View\DBSetting.cs">
       <SubType>Form</SubType>
@@ -95,8 +95,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="View\DBManager.resx">
-      <DependentUpon>DBManager.cs</DependentUpon>
+    <EmbeddedResource Include="View\DBDroid.resx">
+      <DependentUpon>DBDroid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\DBSetting.resx">
       <DependentUpon>DBSetting.cs</DependentUpon>

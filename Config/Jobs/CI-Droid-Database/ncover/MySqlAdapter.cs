@@ -1,4 +1,4 @@
-﻿namespace Manager_database
+﻿namespace Droid_database
 {
     using System;
     using System.Collections.Generic;

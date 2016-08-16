@@ -17,9 +17,9 @@ install:
 - ps: >-
     nuget install Build\.nuget\packages.config -OutputDirectory packages
 
-    nuget restore Manager_Database.sln
+    nuget restore Droid_Database.sln
 build:
-  project: Manager_Database.sln
+  project: Droid_Database.sln
   verbosity: minimal
 test_script:
 - ps: >-

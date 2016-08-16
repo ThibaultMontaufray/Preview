@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bom
 {
-    public class BomManager
+    public class BomDroid
     {
         public int MethodToTest(IEnumerable<int> collection)
         {

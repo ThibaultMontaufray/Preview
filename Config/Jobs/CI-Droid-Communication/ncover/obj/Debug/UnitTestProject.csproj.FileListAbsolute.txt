@@ -1,11 +1,11 @@
 C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\UnitTestProject.dll
 C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\UnitTestProject.pdb
-C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\Manager_communication.dll
+C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\Droid_communication.dll
 C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\mscorlib.dll
 C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\nunit.framework.dll
 C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\Tools4Libraries.dll
 C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\Newtonsoft.Json.dll
-C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\Manager_communication.pdb
+C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\Droid_communication.pdb
 C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\nunit.framework.xml
 C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\Newtonsoft.Json.xml
 C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\UnitTestProject\bin\Debug\de\mscorlib.resources.dll

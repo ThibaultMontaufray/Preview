@@ -459,7 +459,7 @@ Issues Resolved
  * 622  nunit-console fails when use --output
  * 628  Modify IService interface and simplify ServiceContext
  * 631  Separate packaging for the compact framework
- * 646  ConfigurationManager.AppSettings Params Return Null under Beta 1
+ * 646  ConfigurationDroid.AppSettings Params Return Null under Beta 1
  * 648  Passing 2 or more test assemblies targeting > .NET 2.0 to nunit-console fails
 
 NUnit 3.0.0 Beta 1 - March 25, 2015
@@ -882,7 +882,7 @@ Bug Fixes
  * 708173 	NUnit's logic for comparing arrays - use Comparer<T[]> if it is provided
  * 709062 	"System.ArgumentException : Cannot compare" when the element is a list
  * 712156 	Tests cannot use AppDomain.SetPrincipalPolicy
- * 719184 	Platformdependency in src/ClientUtilities/util/Services/DomainManager.cs:40
+ * 719184 	Platformdependency in src/ClientUtilities/util/Services/DomainDroid.cs:40
  * 719187 	Using Path.GetTempPath() causes conflicts in shared temporary folders
  * 735851 	Add detection of 3.0, 3.5 and 4.0 frameworks to PlatformAttribute
  * 736062 	Deadlock when EventListener performs a Trace call + EventPump synchronisation

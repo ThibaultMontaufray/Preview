@@ -61,9 +61,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Manager_Communication.csproj">
+    <ProjectReference Include="..\Droid_Communication.csproj">
       <Project>{f584b1ba-503a-483a-a17b-626ac1554a25}</Project>
-      <Name>Manager_Communication</Name>
+      <Name>Droid_Communication</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

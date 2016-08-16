@@ -8,7 +8,7 @@ using System.Data;
 using System.IO;
 using System.Windows.Forms;
 
-namespace Manager_database
+namespace Droid_database
 {
     public enum DBType
     {

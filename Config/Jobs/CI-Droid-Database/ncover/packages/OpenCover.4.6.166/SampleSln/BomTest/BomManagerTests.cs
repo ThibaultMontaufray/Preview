@@ -10,13 +10,13 @@ using NUnit.Framework;
 namespace BomTest
 {
     [TestFixture]
-    public class BomManagerTests
+    public class BomDroidTests
     {
         [Test]
         public void Sum_Is_Zero_When_No_Entries()
         {
-            var bomManager = new BomManager();
-            Assert.AreEqual(0, bomManager.MethodToTest(new Collection<int>()));
+            var bomDroid = new BomDroid();
+            Assert.AreEqual(0, bomDroid.MethodToTest(new Collection<int>()));
         }
 
         [Test]
@@ -25,15 +25,15 @@ namespace BomTest
         [TestCase(new[] { 1, 2, 3 }, 6)]
         public void Sum_Is_Calculated_Correctly_When_Entries_Supplied(int[] data, int expected)
         {
-            var bomManager = new BomManager();
-            Assert.AreEqual(expected, bomManager.MethodToTest(new Collection<int>(data)));
+            var bomDroid = new BomDroid();
+            Assert.AreEqual(expected, bomDroid.MethodToTest(new Collection<int>(data)));
         }
 
         [Test]
         public void Sum_Is_Zero_When_Null_Collection()
         {
-            var bomManager = new BomManager();
-            Assert.AreEqual(0, bomManager.MethodToTest(null));
+            var bomDroid = new BomDroid();
+            Assert.AreEqual(0, bomDroid.MethodToTest(null));
         }
     }
 }

@@ -12,7 +12,7 @@ using System.IO;
 //using Microsoft.SqlServer.Management.Smo;
 using Microsoft.SqlServer;
 
-namespace Manager_database
+namespace Droid_database
 {
     public delegate DBConnectionEventHandler DBConnectionEventHandler();
 
@@ -86,7 +86,7 @@ namespace Manager_database
             _ds = new DataSet();
             
             QueryFILE("");
-            // DBManager dbm = new DBManager(this);
+            // DBDroid dbm = new DBDroid(this);
         }
 
         public void AddTableTmp(string Label, string TParent, List<string> TListAttributes, List<string> TListChilds, List<string> TLinks)

@@ -28574,7 +28574,7 @@
             Adds an entity to the related end.  If the owner is
             attached to a cache then the all the connected ends are
             added to the object cache and their corresponding relationships
-            are also added to the ObjectStateManager. The RelatedEnd of the
+            are also added to the ObjectStateDroid. The RelatedEnd of the
             relationship is also fixed.
             </summary>
             <param name="entity"> Entity instance to add to the related end </param>
@@ -28608,7 +28608,7 @@
             <summary>
             Used internally to deserialize entity objects along with the
             <see
-                cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager" />
+                cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid" />
             instances.
             </summary>
             <param name="context">The serialized stream.</param>
@@ -28841,22 +28841,22 @@
             Interface that a data class must implement if exposes relationships
             </summary>
         </member>
-        <member name="P:System.Data.Entity.Core.Objects.DataClasses.IEntityWithRelationships.RelationshipManager">
+        <member name="P:System.Data.Entity.Core.Objects.DataClasses.IEntityWithRelationships.RelationshipDroid">
             <summary>Returns the relationship Droid that manages relationships for an instance of an entity type.</summary>
             <remarks>
             Classes that expose relationships must implement this property
-            by constructing and setting RelationshipManager in their constructor.
-            The implementation of this property should use the static method RelationshipManager.Create
-            to create a new RelationshipManager when needed. Once created, it is expected that this
+            by constructing and setting RelationshipDroid in their constructor.
+            The implementation of this property should use the static method RelationshipDroid.Create
+            to create a new RelationshipDroid when needed. Once created, it is expected that this
             object will be stored on the entity and will be provided through this property.
             </remarks>
             <returns>
-            The <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager" /> for this entity.
+            The <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid" /> for this entity.
             </returns>
         </member>
         <member name="M:System.Data.Entity.Core.Objects.DataClasses.EntityObject.System#Data#Entity#Core#Objects#DataClasses#IEntityWithChangeTracker#SetChangeTracker(System.Data.Entity.Core.Objects.DataClasses.IEntityChangeTracker)">
             <summary>
-            Used by the ObjectStateManager to attach or detach this EntityObject to the cache.
+            Used by the ObjectStateDroid to attach or detach this EntityObject to the cache.
             </summary>
             <param name="changeTracker"> Reference to the ObjectStateEntry that contains this entity </param>
         </member>
@@ -28882,7 +28882,7 @@
             The <see cref="T:System.Data.Entity.Core.EntityKey" /> for this object.
             </returns>
         </member>
-        <member name="P:System.Data.Entity.Core.Objects.DataClasses.EntityObject.System#Data#Entity#Core#Objects#DataClasses#IEntityWithRelationships#RelationshipManager">
+        <member name="P:System.Data.Entity.Core.Objects.DataClasses.EntityObject.System#Data#Entity#Core#Objects#DataClasses#IEntityWithRelationships#RelationshipDroid">
             <summary>
             Returns the container for the lazily created relationship
             navigation property objects, collections and refs.
@@ -28959,7 +28959,7 @@
             </summary>
             <remarks>
             The default constructor is required for some serialization scenarios. It should not be used to
-            create new EntityReferences. Use the GetRelatedReference or GetRelatedEnd methods on the RelationshipManager
+            create new EntityReferences. Use the GetRelatedReference or GetRelatedEnd methods on the RelationshipDroid
             class instead.
             </remarks>
         </member>
@@ -29026,19 +29026,19 @@
             The relationship is an Association
             </summary>
         </member>
-        <member name="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager">
+        <member name="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid">
             <summary>
             Container for the lazily created relationship navigation
             property objects (collections and refs).
             </summary>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.Create(System.Data.Entity.Core.Objects.DataClasses.IEntityWithRelationships)">
+        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid.Create(System.Data.Entity.Core.Objects.DataClasses.IEntityWithRelationships)">
             <summary>
-            Creates a new <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager" /> object.
+            Creates a new <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid" /> object.
             </summary>
             <remarks>
             Used by data classes that support relationships. If the change tracker
-            requests the RelationshipManager property and the data class does not
+            requests the RelationshipDroid property and the data class does not
             already have a reference to one of these objects, it calls this method
             to create one, then saves a reference to that object. On subsequent accesses
             to that property, the data class should return the saved reference.
@@ -29049,11 +29049,11 @@
             they explicitly need to get an object of this type. It helps define the intended usage.
             </remarks>
             <returns>
-            The requested <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager" />.
+            The requested <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid" />.
             </returns>
             <param name="owner">Reference to the entity that is calling this method.</param>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.GetRelatedEnd(System.String,System.String)">
+        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid.GetRelatedEnd(System.String,System.String)">
             <summary>
             Returns either an <see cref="T:System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1" /> or
             <see
@@ -29075,7 +29075,7 @@
             <exception cref="T:System.InvalidOperationException">The source type does not match the type of the owner.</exception>
             <exception cref="T:System.ArgumentException"> targetRoleName  is invalid or unable to find the relationship type in the metadata.</exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.InitializeRelatedReference``1(System.String,System.String,System.Data.Entity.Core.Objects.DataClasses.EntityReference{``0})">
+        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid.InitializeRelatedReference``1(System.String,System.String,System.Data.Entity.Core.Objects.DataClasses.EntityReference{``0})">
             <summary>
             Takes an existing EntityReference that was created with the default constructor and initializes it using the provided relationship and target role names.
             This method is designed to be used during deserialization only, and will throw an exception if the provided EntityReference has already been initialized,
@@ -29096,7 +29096,7 @@
             or when the relationship Droid already contains a relationship with this name and target role.
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.InitializeRelatedCollection``1(System.String,System.String,System.Data.Entity.Core.Objects.DataClasses.EntityCollection{``0})">
+        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid.InitializeRelatedCollection``1(System.String,System.String,System.Data.Entity.Core.Objects.DataClasses.EntityCollection{``0})">
             <summary>
             Takes an existing EntityCollection that was created with the default constructor and initializes it using the provided relationship and target role names.
             This method is designed to be used during deserialization only, and will throw an exception if the provided EntityCollection has already been initialized,
@@ -29107,7 +29107,7 @@
             <param name="entityCollection">An existing EntityCollection.</param>
             <typeparam name="TTargetEntity"> Type of the entity represented by targetRoleName </typeparam>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.GetRelatedCollection``1(System.String,System.String)">
+        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid.GetRelatedCollection``1(System.String,System.String)">
             <summary>
             Gets an <see cref="T:System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1" /> of related objects with the specified relationship name and target role name.
             </summary>
@@ -29126,7 +29126,7 @@
             .
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.GetRelatedReference``1(System.String,System.String)">
+        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid.GetRelatedReference``1(System.String,System.String)">
             <summary>
             Gets the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.EntityReference`1" /> for a related object by using the specified combination of relationship name and target role name.
             </summary>
@@ -29145,7 +29145,7 @@
             .
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.GetAllRelatedEnds">
+        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid.GetAllRelatedEnds">
             <summary>Returns an enumeration of all the related ends managed by the relationship Droid.</summary>
             <returns>
             An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of objects that implement
@@ -29154,17 +29154,17 @@
             . An empty enumeration is returned when the relationships have not yet been populated.
             </returns>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.OnSerializing(System.Runtime.Serialization.StreamingContext)">
+        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid.OnSerializing(System.Runtime.Serialization.StreamingContext)">
             <summary>
             Called by Object Services to prepare an <see cref="T:System.Data.Entity.Core.EntityKey" /> for binary serialization with a serialized relationship.
             </summary>
             <param name="context">Describes the source and destination of a given serialized stream, and provides an additional caller-defined context.</param>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.OnDeserialized(System.Runtime.Serialization.StreamingContext)">
+        <member name="M:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid.OnDeserialized(System.Runtime.Serialization.StreamingContext)">
             <summary>
             Used internally to deserialize entity objects along with the
             <see
-                cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager" />
+                cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid" />
             instances.
             </summary>
             <param name="context">The serialized stream.</param>
@@ -29276,15 +29276,15 @@
             <param name="complexObject"> The complex object that contains the property that changed </param>
             <param name="complexObjectMemberName"> The name of the property that changed on complexObject </param>
         </member>
-        <member name="P:System.Data.Entity.Core.Objects.ObjectStateEntry.ObjectStateManager">
+        <member name="P:System.Data.Entity.Core.Objects.ObjectStateEntry.ObjectStateDroid">
             <summary>
-            Gets the <see cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" /> for the
+            Gets the <see cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" /> for the
             <see
                 cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" />
             .
             </summary>
             <returns>
-            The <see cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" /> for the
+            The <see cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" /> for the
             <see
                 cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" />
             .
@@ -29340,12 +29340,12 @@
             .
             </returns>
         </member>
-        <member name="P:System.Data.Entity.Core.Objects.ObjectStateEntry.RelationshipManager">
+        <member name="P:System.Data.Entity.Core.Objects.ObjectStateEntry.RelationshipDroid">
             <summary>
-            Gets the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager"/> instance for the object represented by entry.
+            Gets the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid"/> instance for the object represented by entry.
             </summary>
             <returns>
-            The <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager"/> object.
+            The <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid"/> object.
             </returns>
             <exception cref="T:System.InvalidOperationException">The entry is a stub or represents a relationship</exception>
         </member>
@@ -29601,7 +29601,7 @@
                 cref="T:System.Data.Entity.Core.EntityKey" />
              or the object is not in the
             <see
-                cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" />
+                cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" />
             or it is in a
             <see
                 cref="F:System.Data.Entity.EntityState.Detached" />
@@ -29641,7 +29641,7 @@
                 cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" />
             for the object cannot be found in the
             <see
-                cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" />
+                cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" />
              or the object is in an
             <see
                 cref="F:System.Data.Entity.EntityState.Added" />
@@ -29775,7 +29775,7 @@
             <param name="entity">
             Object to be detached. Only the  entity  is removed; if there are any related objects that are being tracked by the same
             <see
-                cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" />
+                cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" />
             , those will not be detached automatically.
             </param>
             <exception cref="T:System.ArgumentNullException">The  entity  is null. </exception>
@@ -29807,7 +29807,7 @@
             <param name="key">The key of the object to be found.</param>
             <exception cref="T:System.ArgumentNullException">The  key  parameter is null.</exception>
             <exception cref="T:System.Data.Entity.Core.ObjectNotFoundException">
-            The object is not found in either the <see cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" /> or the data source.
+            The object is not found in either the <see cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" /> or the data source.
             </exception>
         </member>
         <member name="M:System.Data.Entity.Core.Objects.ObjectContext.Refresh(System.Data.Entity.Core.Objects.RefreshMode,System.Collections.IEnumerable)">
@@ -29877,7 +29877,7 @@
             <summary>
             Ensures that <see cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" /> changes are synchronized with changes in all objects that are tracked by the
             <see
-                cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" />
+                cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" />
             .
             </summary>
         </member>
@@ -30222,10 +30222,10 @@
             .
             </returns>
         </member>
-        <member name="P:System.Data.Entity.Core.Objects.ObjectContext.ObjectStateManager">
+        <member name="P:System.Data.Entity.Core.Objects.ObjectContext.ObjectStateDroid">
             <summary>Gets the object state Droid used by the object context to track object changes.</summary>
             <returns>
-            The <see cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" /> used by this
+            The <see cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" /> used by this
             <see
                 cref="T:System.Data.Entity.Core.Objects.ObjectContext" />
             .
@@ -30887,7 +30887,7 @@
             <param name="entity">
             Object to be detached. Only the  entity  is removed; if there are any related objects that are being tracked by the same
             <see
-                cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" />
+                cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" />
             , those will not be detached automatically.
             </param>
         </member>
@@ -30949,20 +30949,20 @@
             The original values of the properties of an entity when it was retrieved from the database.
             </summary>
         </member>
-        <member name="T:System.Data.Entity.Core.Objects.ObjectStateManager">
+        <member name="T:System.Data.Entity.Core.Objects.ObjectStateDroid">
             <summary>
             Maintains object state and identity management for entity type instances and relationship instances.
             </summary>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.#ctor(System.Data.Entity.Core.Metadata.Edm.MetadataWorkspace)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.#ctor(System.Data.Entity.Core.Metadata.Edm.MetadataWorkspace)">
             <summary>
-            Initializes a new instance of the <see cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" /> class.
+            Initializes a new instance of the <see cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" /> class.
             </summary>
             <param name="metadataWorkspace">
             The <see cref="T:System.Data.Entity.Core.Metadata.Edm.MetadataWorkspace" />, which supplies mapping and metadata information.
             </param>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.GetObjectStateEntries(System.Data.Entity.EntityState)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.GetObjectStateEntries(System.Data.Entity.EntityState)">
             <summary>
             Returns a collection of <see cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" /> objects for objects or relationships with the given state.
             </summary>
@@ -30982,7 +30982,7 @@
             When  state  is <see cref="F:System.Data.Entity.EntityState.Detached" />.
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.ChangeObjectState(System.Object,System.Data.Entity.EntityState)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.ChangeObjectState(System.Object,System.Data.Entity.EntityState)">
             <summary>
             Changes state of the <see cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" /> for a specific object to the specified  entityState .
             </summary>
@@ -30999,7 +30999,7 @@
             or when  state  is not a valid <see cref="T:System.Data.Entity.EntityState" /> value.
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.ChangeRelationshipState(System.Object,System.Object,System.String,System.Data.Entity.EntityState)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.ChangeRelationshipState(System.Object,System.Object,System.String,System.Data.Entity.EntityState)">
             <summary>Changes the state of the relationship between two entity objects that is specified based on the two related objects and the name of the navigation property.</summary>
             <returns>
             The <see cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" /> for the relationship that was changed.
@@ -31025,7 +31025,7 @@
             or when  state  is not a valid <see cref="T:System.Data.Entity.EntityState" /> value
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.ChangeRelationshipState``1(``0,System.Object,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Data.Entity.EntityState)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.ChangeRelationshipState``1(``0,System.Object,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Data.Entity.EntityState)">
             <summary>Changes the state of the relationship between two entity objects that is specified based on the two related objects and a LINQ expression that defines the navigation property.</summary>
             <returns>
             The <see cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" /> for the relationship that was changed.
@@ -31054,7 +31054,7 @@
             or when  state  is not a valid <see cref="T:System.Data.Entity.EntityState" /> value.
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.ChangeRelationshipState(System.Object,System.Object,System.String,System.String,System.Data.Entity.EntityState)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.ChangeRelationshipState(System.Object,System.Object,System.String,System.String,System.Data.Entity.EntityState)">
             <summary>Changes the state of the relationship between two entity objects that is specified based on the two related objects and the properties of the relationship.</summary>
             <returns>
             The <see cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" /> for the relationship that was changed.
@@ -31082,7 +31082,7 @@
             or when  state  is not a valid  <see cref="T:System.Data.Entity.EntityState" /> value.
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.GetObjectStateEntry(System.Data.Entity.Core.EntityKey)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.GetObjectStateEntry(System.Data.Entity.Core.EntityKey)">
             <summary>
             Returns an <see cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" /> for the object or relationship entry with the specified key.
             </summary>
@@ -31100,11 +31100,11 @@
             <exception cref="T:System.InvalidOperationException">
             No entity with the specified <see cref="T:System.Data.Entity.Core.EntityKey" /> exists in the
             <see
-                cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" />
+                cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" />
             .
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.GetObjectStateEntry(System.Object)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.GetObjectStateEntry(System.Object)">
             <summary>
             Returns an <see cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" /> for the specified object.
             </summary>
@@ -31123,11 +31123,11 @@
             <exception cref="T:System.InvalidOperationException">
             No entity for the specified <see cref="T:System.Object" /> exists in the
             <see
-                cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" />
+                cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" />
             .
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.TryGetObjectStateEntry(System.Object,System.Data.Entity.Core.Objects.ObjectStateEntry@)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.TryGetObjectStateEntry(System.Object,System.Data.Entity.Core.Objects.ObjectStateEntry@)">
             <summary>
             Tries to retrieve the corresponding <see cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" /> for the specified
             <see
@@ -31153,7 +31153,7 @@
             This parameter is passed uninitialized.
             </param>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.TryGetObjectStateEntry(System.Data.Entity.Core.EntityKey,System.Data.Entity.Core.Objects.ObjectStateEntry@)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.TryGetObjectStateEntry(System.Data.Entity.Core.EntityKey,System.Data.Entity.Core.Objects.ObjectStateEntry@)">
             <summary>
             Tries to retrieve the corresponding <see cref="T:System.Data.Entity.Core.Objects.ObjectStateEntry" /> for the object or relationship with the specified
             <see
@@ -31180,49 +31180,49 @@
             </param>
             <exception cref="T:System.ArgumentNullException">A null (Nothing in Visual Basic) value is provided for  key .</exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.GetRelationshipManager(System.Object)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.GetRelationshipDroid(System.Object)">
             <summary>
-            Returns the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager"/> that is used by the specified object.
+            Returns the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid"/> that is used by the specified object.
             </summary>
             <returns>
-            The <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager"/> for the specified object.
+            The <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid"/> for the specified object.
             </returns>
             <param name="entity">
-            The object for which to return the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager"/>.
+            The object for which to return the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid"/>.
             </param>
             <exception cref="T:System.InvalidOperationException">
-            The entity does not implement IEntityWithRelationships and is not tracked by this ObjectStateManager
+            The entity does not implement IEntityWithRelationships and is not tracked by this ObjectStateDroid
             </exception>
         </member>
-        <member name="M:System.Data.Entity.Core.Objects.ObjectStateManager.TryGetRelationshipManager(System.Object,System.Data.Entity.Core.Objects.DataClasses.RelationshipManager@)">
+        <member name="M:System.Data.Entity.Core.Objects.ObjectStateDroid.TryGetRelationshipDroid(System.Object,System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid@)">
             <summary>
-            Returns the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager" /> that is used by the specified object.
+            Returns the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid" /> that is used by the specified object.
             </summary>
             <returns>
-            true if a <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager" /> instance was returned for the supplied  entity ; otherwise false.
+            true if a <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid" /> instance was returned for the supplied  entity ; otherwise false.
             </returns>
             <param name="entity">
-            The object for which to return the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager" />.
+            The object for which to return the <see cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid" />.
             </param>
-            <param name="relationshipManager">
+            <param name="relationshipDroid">
             When this method returns, contains the
             <see
-                cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipManager" />
+                cref="T:System.Data.Entity.Core.Objects.DataClasses.RelationshipDroid" />
             for the  entity .
             </param>
         </member>
-        <member name="P:System.Data.Entity.Core.Objects.ObjectStateManager.MetadataWorkspace">
+        <member name="P:System.Data.Entity.Core.Objects.ObjectStateDroid.MetadataWorkspace">
             <summary>
             Gets the <see cref="T:System.Data.Entity.Core.Metadata.Edm.MetadataWorkspace" /> associated with this state Droid.
             </summary>
             <returns>
             The <see cref="T:System.Data.Entity.Core.Metadata.Edm.MetadataWorkspace" /> associated with this
             <see
-                cref="T:System.Data.Entity.Core.Objects.ObjectStateManager" />
+                cref="T:System.Data.Entity.Core.Objects.ObjectStateDroid" />
             .
             </returns>
         </member>
-        <member name="E:System.Data.Entity.Core.Objects.ObjectStateManager.ObjectStateManagerChanged">
+        <member name="E:System.Data.Entity.Core.Objects.ObjectStateDroid.ObjectStateDroidChanged">
             <summary>Occurs when entities are added to or removed from the state Droid.</summary>
         </member>
         <member name="T:System.Data.Entity.Core.Objects.ProxyDataContractResolver">
@@ -31283,12 +31283,12 @@
         </member>
         <member name="F:System.Data.Entity.Core.Objects.SaveOptions.AcceptAllChangesAfterSave">
             <summary>
-            After changes are saved, the AcceptAllChangesAfterSave method is called, which resets change tracking in the ObjectStateManager.
+            After changes are saved, the AcceptAllChangesAfterSave method is called, which resets change tracking in the ObjectStateDroid.
             </summary>
         </member>
         <member name="F:System.Data.Entity.Core.Objects.SaveOptions.DetectChangesBeforeSave">
             <summary>
-            Before changes are saved, the DetectChanges method is called to synchronize the property values of objects that are attached to the object context with data in the ObjectStateManager.
+            Before changes are saved, the DetectChanges method is called to synchronize the property values of objects that are attached to the object context with data in the ObjectStateDroid.
             </summary>
         </member>
         <member name="T:System.Data.Entity.Core.OptimisticConcurrencyException">

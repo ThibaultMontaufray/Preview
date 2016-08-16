@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(window_dialog));
+            System.ComponentModel.ComponentResourceDroid resources = new System.ComponentModel.ComponentResourceDroid(typeof(window_dialog));
             this.buttonClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 

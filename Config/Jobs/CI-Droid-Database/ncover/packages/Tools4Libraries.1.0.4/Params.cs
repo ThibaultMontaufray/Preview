@@ -4,8 +4,8 @@
 
     public static class Params
     {
-        private const string CONFIGFILE = @"../../../configmanagers.xml";
-        //private const string CONFIGFILE = @"D:\DEV\_Assistant\Assistant\configmanagers.xml";
+        private const string CONFIGFILE = @"../../../configDroids.xml";
+        //private const string CONFIGFILE = @"D:\DEV\_Assistant\Assistant\configDroids.xml";
 
         #region Attribute
         private static string _webProxyHost;
@@ -100,43 +100,43 @@
             XmlDocument xml = new XmlDocument();
             xml.Load(CONFIGFILE);
 
-            _webProxyHost = xml.SelectNodes("/configmanager/web/proxy/host").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/host")[0].InnerText : string.Empty;
-            _webProxyLogin = xml.SelectNodes("/configmanager/web/proxy/login").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/login")[0].InnerText : string.Empty;
-            _webProxyPassword = xml.SelectNodes("/configmanager/web/proxy/password").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/password")[0].InnerText : string.Empty;
-            _webProxyPort = xml.SelectNodes("/configmanager/web/proxy/port").Count > 0 ? xml.SelectNodes("/configmanager/web/proxy/port")[0].InnerText : string.Empty;
-            _webHttpLogin = xml.SelectNodes("/configmanager/web/http/login").Count > 0 ? xml.SelectNodes("/configmanager/web/http/login")[0].InnerText : string.Empty;
-            _webHttpPassword = xml.SelectNodes("/configmanager/web/http/password").Count > 0 ? xml.SelectNodes("/configmanager/web/http/password")[0].InnerText : string.Empty;
-            _communicationSlackToken = xml.SelectNodes("/configmanager/communication/slack/token").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/token")[0].InnerText : string.Empty;
-            _communicationSlackUrl = xml.SelectNodes("/configmanager/communication/slack/url").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/url")[0].InnerText : string.Empty;
-            _communicationSlackAccount = xml.SelectNodes("/configmanager/communication/slack/account").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/account")[0].InnerText : string.Empty;
-            _communicationSlackTopic = xml.SelectNodes("/configmanager/communication/slack/topic").Count > 0 ? xml.SelectNodes("/configmanager/communication/slack/topic")[0].InnerText : string.Empty;
-            _communicationMailLogin = xml.SelectNodes("/configmanager/communication/mail/login").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/login")[0].InnerText : string.Empty;
-            _communicationMailPassword = xml.SelectNodes("/configmanager/communication/mail/password").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/password")[0].InnerText : string.Empty;
-            _communicationMailSmtpPort = xml.SelectNodes("/configmanager/communication/mail/smtp").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/smtp")[0].Attributes.GetNamedItem("port").Value : string.Empty;
-            _communicationMailSmtpHost = xml.SelectNodes("/configmanager/communication/mail/smtp").Count > 0 ? xml.SelectNodes("/configmanager/communication/mail/smtp")[0].Attributes.GetNamedItem("host").Value : string.Empty;
-            _logisticSncfToken = xml.SelectNodes("/configmanager/logistic/sncfkey").Count > 0 ? xml.SelectNodes("/configmanager/logistic/sncfkey")[0].InnerText : string.Empty;
-            _databaseHost = xml.SelectNodes("/configmanager/database/host").Count > 0 ? xml.SelectNodes("/configmanager/database/host")[0].InnerText : string.Empty;
-            _databasePassword = xml.SelectNodes("/configmanager/database/password").Count > 0 ? xml.SelectNodes("/configmanager/database/password")[0].InnerText : string.Empty;
-            _databaseLogin = xml.SelectNodes("/configmanager/database/login").Count > 0 ? xml.SelectNodes("/configmanager/database/login")[0].InnerText : string.Empty;
-            _databaseName = xml.SelectNodes("/configmanager/database/name").Count > 0 ? xml.SelectNodes("/configmanager/database/name")[0].InnerText : string.Empty;
-            _githubHost = xml.SelectNodes("/configmanager/github/host").Count > 0 ? xml.SelectNodes("/configmanager/github/host")[0].InnerText : string.Empty;
-            _githubPassword = xml.SelectNodes("/configmanager/github/password").Count > 0 ? xml.SelectNodes("/configmanager/github/password")[0].InnerText : string.Empty;
-            _githubLogin = xml.SelectNodes("/configmanager/github/login").Count > 0 ? xml.SelectNodes("/configmanager/github/login")[0].InnerText : string.Empty;
-            _jiraHost = xml.SelectNodes("/configmanager/jira/host").Count > 0 ? xml.SelectNodes("/configmanager/jira/host")[0].InnerText : string.Empty;
-            _jiraPassword = xml.SelectNodes("/configmanager/jira/password").Count > 0 ? xml.SelectNodes("/configmanager/jira/password")[0].InnerText : string.Empty;
-            _jiraLogin = xml.SelectNodes("/configmanager/jira/login").Count > 0 ? xml.SelectNodes("/configmanager/jira/login")[0].InnerText : string.Empty;
-            _sonarHost = xml.SelectNodes("/configmanager/sonar/host").Count > 0 ? xml.SelectNodes("/configmanager/sonar/host")[0].InnerText : string.Empty;
-            _sonarPassword = xml.SelectNodes("/configmanager/sonar/password").Count > 0 ? xml.SelectNodes("/configmanager/sonar/password")[0].InnerText : string.Empty;
-            _sonarLogin = xml.SelectNodes("/configmanager/sonar/login").Count > 0 ? xml.SelectNodes("/configmanager/sonar/login")[0].InnerText : string.Empty;
-            _teamcityHost = xml.SelectNodes("/configmanager/teamcity/host").Count > 0 ? xml.SelectNodes("/configmanager/teamcity/host")[0].InnerText : string.Empty;
-            _teamcityPassword = xml.SelectNodes("/configmanager/teamcity/password").Count > 0 ? xml.SelectNodes("/configmanager/teamcity/password")[0].InnerText : string.Empty;
-            _teamcityLogin = xml.SelectNodes("/configmanager/teamcity/login").Count > 0 ? xml.SelectNodes("/configmanager/teamcity/login")[0].InnerText : string.Empty;
-            _jenkinsHost = xml.SelectNodes("/configmanager/jenkins/host").Count > 0 ? xml.SelectNodes("/configmanager/jenkins/host")[0].InnerText : string.Empty;
-            _jenkinsPassword = xml.SelectNodes("/configmanager/jenkins/password").Count > 0 ? xml.SelectNodes("/configmanager/jenkins/password")[0].InnerText : string.Empty;
-            _jenkinsLogin = xml.SelectNodes("/configmanager/jenkins/login").Count > 0 ? xml.SelectNodes("/configmanager/jenkins/login")[0].InnerText : string.Empty;
-            _dockerHost = xml.SelectNodes("/configmanager/docker/host").Count > 0 ? xml.SelectNodes("/configmanager/docker/host")[0].InnerText : string.Empty;
-            _dockerPassword = xml.SelectNodes("/configmanager/docker/password").Count > 0 ? xml.SelectNodes("/configmanager/docker/password")[0].InnerText : string.Empty;
-            _dockerLogin = xml.SelectNodes("/configmanager/docker/login").Count > 0 ? xml.SelectNodes("/configmanager/docker/login")[0].InnerText : string.Empty;
+            _webProxyHost = xml.SelectNodes("/configDroid/web/proxy/host").Count > 0 ? xml.SelectNodes("/configDroid/web/proxy/host")[0].InnerText : string.Empty;
+            _webProxyLogin = xml.SelectNodes("/configDroid/web/proxy/login").Count > 0 ? xml.SelectNodes("/configDroid/web/proxy/login")[0].InnerText : string.Empty;
+            _webProxyPassword = xml.SelectNodes("/configDroid/web/proxy/password").Count > 0 ? xml.SelectNodes("/configDroid/web/proxy/password")[0].InnerText : string.Empty;
+            _webProxyPort = xml.SelectNodes("/configDroid/web/proxy/port").Count > 0 ? xml.SelectNodes("/configDroid/web/proxy/port")[0].InnerText : string.Empty;
+            _webHttpLogin = xml.SelectNodes("/configDroid/web/http/login").Count > 0 ? xml.SelectNodes("/configDroid/web/http/login")[0].InnerText : string.Empty;
+            _webHttpPassword = xml.SelectNodes("/configDroid/web/http/password").Count > 0 ? xml.SelectNodes("/configDroid/web/http/password")[0].InnerText : string.Empty;
+            _communicationSlackToken = xml.SelectNodes("/configDroid/communication/slack/token").Count > 0 ? xml.SelectNodes("/configDroid/communication/slack/token")[0].InnerText : string.Empty;
+            _communicationSlackUrl = xml.SelectNodes("/configDroid/communication/slack/url").Count > 0 ? xml.SelectNodes("/configDroid/communication/slack/url")[0].InnerText : string.Empty;
+            _communicationSlackAccount = xml.SelectNodes("/configDroid/communication/slack/account").Count > 0 ? xml.SelectNodes("/configDroid/communication/slack/account")[0].InnerText : string.Empty;
+            _communicationSlackTopic = xml.SelectNodes("/configDroid/communication/slack/topic").Count > 0 ? xml.SelectNodes("/configDroid/communication/slack/topic")[0].InnerText : string.Empty;
+            _communicationMailLogin = xml.SelectNodes("/configDroid/communication/mail/login").Count > 0 ? xml.SelectNodes("/configDroid/communication/mail/login")[0].InnerText : string.Empty;
+            _communicationMailPassword = xml.SelectNodes("/configDroid/communication/mail/password").Count > 0 ? xml.SelectNodes("/configDroid/communication/mail/password")[0].InnerText : string.Empty;
+            _communicationMailSmtpPort = xml.SelectNodes("/configDroid/communication/mail/smtp").Count > 0 ? xml.SelectNodes("/configDroid/communication/mail/smtp")[0].Attributes.GetNamedItem("port").Value : string.Empty;
+            _communicationMailSmtpHost = xml.SelectNodes("/configDroid/communication/mail/smtp").Count > 0 ? xml.SelectNodes("/configDroid/communication/mail/smtp")[0].Attributes.GetNamedItem("host").Value : string.Empty;
+            _logisticSncfToken = xml.SelectNodes("/configDroid/logistic/sncfkey").Count > 0 ? xml.SelectNodes("/configDroid/logistic/sncfkey")[0].InnerText : string.Empty;
+            _databaseHost = xml.SelectNodes("/configDroid/database/host").Count > 0 ? xml.SelectNodes("/configDroid/database/host")[0].InnerText : string.Empty;
+            _databasePassword = xml.SelectNodes("/configDroid/database/password").Count > 0 ? xml.SelectNodes("/configDroid/database/password")[0].InnerText : string.Empty;
+            _databaseLogin = xml.SelectNodes("/configDroid/database/login").Count > 0 ? xml.SelectNodes("/configDroid/database/login")[0].InnerText : string.Empty;
+            _databaseName = xml.SelectNodes("/configDroid/database/name").Count > 0 ? xml.SelectNodes("/configDroid/database/name")[0].InnerText : string.Empty;
+            _githubHost = xml.SelectNodes("/configDroid/github/host").Count > 0 ? xml.SelectNodes("/configDroid/github/host")[0].InnerText : string.Empty;
+            _githubPassword = xml.SelectNodes("/configDroid/github/password").Count > 0 ? xml.SelectNodes("/configDroid/github/password")[0].InnerText : string.Empty;
+            _githubLogin = xml.SelectNodes("/configDroid/github/login").Count > 0 ? xml.SelectNodes("/configDroid/github/login")[0].InnerText : string.Empty;
+            _jiraHost = xml.SelectNodes("/configDroid/jira/host").Count > 0 ? xml.SelectNodes("/configDroid/jira/host")[0].InnerText : string.Empty;
+            _jiraPassword = xml.SelectNodes("/configDroid/jira/password").Count > 0 ? xml.SelectNodes("/configDroid/jira/password")[0].InnerText : string.Empty;
+            _jiraLogin = xml.SelectNodes("/configDroid/jira/login").Count > 0 ? xml.SelectNodes("/configDroid/jira/login")[0].InnerText : string.Empty;
+            _sonarHost = xml.SelectNodes("/configDroid/sonar/host").Count > 0 ? xml.SelectNodes("/configDroid/sonar/host")[0].InnerText : string.Empty;
+            _sonarPassword = xml.SelectNodes("/configDroid/sonar/password").Count > 0 ? xml.SelectNodes("/configDroid/sonar/password")[0].InnerText : string.Empty;
+            _sonarLogin = xml.SelectNodes("/configDroid/sonar/login").Count > 0 ? xml.SelectNodes("/configDroid/sonar/login")[0].InnerText : string.Empty;
+            _teamcityHost = xml.SelectNodes("/configDroid/teamcity/host").Count > 0 ? xml.SelectNodes("/configDroid/teamcity/host")[0].InnerText : string.Empty;
+            _teamcityPassword = xml.SelectNodes("/configDroid/teamcity/password").Count > 0 ? xml.SelectNodes("/configDroid/teamcity/password")[0].InnerText : string.Empty;
+            _teamcityLogin = xml.SelectNodes("/configDroid/teamcity/login").Count > 0 ? xml.SelectNodes("/configDroid/teamcity/login")[0].InnerText : string.Empty;
+            _jenkinsHost = xml.SelectNodes("/configDroid/jenkins/host").Count > 0 ? xml.SelectNodes("/configDroid/jenkins/host")[0].InnerText : string.Empty;
+            _jenkinsPassword = xml.SelectNodes("/configDroid/jenkins/password").Count > 0 ? xml.SelectNodes("/configDroid/jenkins/password")[0].InnerText : string.Empty;
+            _jenkinsLogin = xml.SelectNodes("/configDroid/jenkins/login").Count > 0 ? xml.SelectNodes("/configDroid/jenkins/login")[0].InnerText : string.Empty;
+            _dockerHost = xml.SelectNodes("/configDroid/docker/host").Count > 0 ? xml.SelectNodes("/configDroid/docker/host")[0].InnerText : string.Empty;
+            _dockerPassword = xml.SelectNodes("/configDroid/docker/password").Count > 0 ? xml.SelectNodes("/configDroid/docker/password")[0].InnerText : string.Empty;
+            _dockerLogin = xml.SelectNodes("/configDroid/docker/login").Count > 0 ? xml.SelectNodes("/configDroid/docker/login")[0].InnerText : string.Empty;
         }
         #endregion
     }

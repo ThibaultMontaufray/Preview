@@ -147,7 +147,7 @@
     <Compile Include="Model\Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\ToolBarEventArgs.cs" />
-    <Compile Include="Graphics\ToolStripMenuManager.cs" />
+    <Compile Include="Graphics\ToolStripMenuDroid.cs" />
     <Compile Include="Graphics\window_popup.cs">
       <SubType>Form</SubType>
     </Compile>

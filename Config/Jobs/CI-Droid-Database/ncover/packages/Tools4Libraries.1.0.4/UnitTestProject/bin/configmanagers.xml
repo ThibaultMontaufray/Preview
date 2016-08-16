@@ -1,5 +1,5 @@
 
-                    <configmanager>
+                    <configDroid>
 	                    <web>
 		                    <proxy>
 			                    <host></host>
@@ -66,5 +66,5 @@
 			                    <password></password>
 		                    </docker>
 	                    </deployer>
-                    </configmanager>
+                    </configDroid>
                 

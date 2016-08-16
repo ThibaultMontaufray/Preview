@@ -7,16 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Manager_database
+namespace Droid_database
 {
-    public partial class DBManager : Panel
+    public partial class DBDroid : Panel
     {
         #region Attribute
         private DBConnection _dbc;
         #endregion
 
         #region Properties
-        public DBConnection ManagerDBConnection
+        public DBConnection DroidDBConnection
         {
             get { return _dbc; }
             set
@@ -28,12 +28,12 @@ namespace Manager_database
         #endregion
 
         #region Constructor
-        public DBManager()
+        public DBDroid()
         {
             InitializeComponent();
         }
 
-        public DBManager(DBConnection dbc)
+        public DBDroid(DBConnection dbc)
         {
             InitializeComponent();
             

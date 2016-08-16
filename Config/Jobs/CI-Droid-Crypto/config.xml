@@ -41,12 +41,12 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.BatchFile>
-      <command>nuget.exe restore Manager_Cryptographie.sln&#xd;
-nuget.exe update Manager_Cryptographie.sln</command>
+      <command>nuget.exe restore Droid_Cryptographie.sln&#xd;
+nuget.exe update Droid_Cryptographie.sln</command>
     </hudson.tasks.BatchFile>
     <hudson.plugins.msbuild.MsBuildBuilder plugin="msbuild@1.25">
       <msBuildName>(Default)</msBuildName>
-      <msBuildFile>Manager_Cryptographie.csproj</msBuildFile>
+      <msBuildFile>Droid_Cryptographie.csproj</msBuildFile>
       <cmdLineArgs>/t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount</cmdLineArgs>
       <buildVariablesAsProperties>false</buildVariablesAsProperties>
       <continueOnBuildFailure>false</continueOnBuildFailure>

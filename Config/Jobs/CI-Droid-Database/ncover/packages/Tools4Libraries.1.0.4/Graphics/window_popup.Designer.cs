@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(window_popup));
+            System.ComponentModel.ComponentResourceDroid resources = new System.ComponentModel.ComponentResourceDroid(typeof(window_popup));
             this.panelTop = new System.Windows.Forms.Panel();
             this.panelTopMiddle = new System.Windows.Forms.Panel();
             this.panelTopRight = new System.Windows.Forms.Panel();

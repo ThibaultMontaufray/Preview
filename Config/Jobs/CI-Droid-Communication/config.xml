@@ -41,12 +41,12 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.BatchFile>
-      <command>nuget.exe restore Manager_Communication.sln&#xd;
-nuget.exe update Manager_Communication.sln</command>
+      <command>nuget.exe restore Droid_Communication.sln&#xd;
+nuget.exe update Droid_Communication.sln</command>
     </hudson.tasks.BatchFile>
     <hudson.plugins.msbuild.MsBuildBuilder plugin="msbuild@1.25">
       <msBuildName>(Default)</msBuildName>
-      <msBuildFile>Manager_Communication.csproj</msBuildFile>
+      <msBuildFile>Droid_Communication.csproj</msBuildFile>
       <cmdLineArgs>/t:build /p:PlateformTarget=x86 /p:Configuration=Debug /maxcpucount</cmdLineArgs>
       <buildVariablesAsProperties>false</buildVariablesAsProperties>
       <continueOnBuildFailure>false</continueOnBuildFailure>
@@ -63,7 +63,7 @@ nuget.exe update Manager_Communication.sln</command>
     <hudson.tasks.BatchFile>
       <command>nunit3-console.exe UnitTestProject\bin\debug\UnitTestProject.dll  --result=TestResult.xml;format=nunit2&#xd;
 &#xd;
-Gallio.Echo.exe &quot;C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\lib\4.0\Manager_Communication.dll&quot; /runner:ncover3 /runner-property:NCoverArguments=&quot;//html artifacts\coverage-html //at ncover3.trend&quot;</command>
+Gallio.Echo.exe &quot;C:\Program Files (x86)\Jenkins\workspace\CI-Droid-Communication\lib\4.0\Droid_Communication.dll&quot; /runner:ncover3 /runner-property:NCoverArguments=&quot;//html artifacts\coverage-html //at ncover3.trend&quot;</command>
     </hudson.tasks.BatchFile>
   </builders>
   <publishers>
