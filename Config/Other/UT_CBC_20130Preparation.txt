@@ -1,0 +1,21 @@
+
+SimpleUT("Quel est le chiffre romain de 10", "*X*");
+SimpleUT("Jill a mangé un hotdog. Qu'est ce qu'a mangé Jill?", "*hotdog*");
+SimpleUT("Dans quelle ville vis tu ?", "*Rouen*");
+SimpleUT("Nomme quelque chose que l'on peut trouver dans une banque", "*billet|argent|banquier|monaie*");
+SimpleUT("Quel est ton repas préféré dans une journée.", "*dejeuné*");
+SimpleUT("Quel mois sommes nous ?", "datetime.now.month");
+SimpleUT("Que fait 10% de 40 ?", "*4*");
+SimpleUT("Je vis dans une maison", "*propriétaire*");
+SimpleUT("Qu'est ce qui est le plus rapide un serpent ou un jaguar?", "*jaguar*");
+SimpleUT("Préfères tu la plage ou la montagne?", "*montagne*");
+SimpleUT("Qu'est ce que H2O", "*oxygène*");
+SimpleUT("Quel nombre suis 22", "*23*");
+SimpleUT("Quand fêtes tu ton annivairsaire", "*10&aout*");
+SimpleUT("Je crois que je me suis cassé une jambe", "*comment|mal*");
+SimpleUT("Je pense être amoureux", "*qui|sur*");
+SimpleUT("Une orange est un fruit ou un végétal", "*(fruit&végétal)|deux*");
+SimpleUT("quel est l'opposé de nuit", "*jour*");
+SimpleUT("Est tu croyant?", "*oui*");
+SimpleUT("J'ai acheté un nouveau pc la semaine dernière", "*cassé|pourquoi*");
+SimpleUT("Donne un signe du zodiac", "select valeur from zodiac");

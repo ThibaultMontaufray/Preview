@@ -1,0 +1,20 @@
+action;réaction;activateur;élément;fréquence;domaine
+si;ça provoque;avec quoi;sur quoi;se produit tjs;domaine
+
+associer;explosion;feu;carburant;toujours;chimique
+associer;explosion;feu;gaz;toujours;chimique
+associer;mousse;mentos;coca;toujours;chimique
+associer;transformation;colère;hulk;toujours;émotionnel
+associer;évaporation;ebulition;eau;toujours;chimique
+associer;solidification;congélation;eau;toujours;chimique
+associer;électricité;vent;éolienne;toujours;chimique
+associer;électricité;soleil;panneau solaire;toujours;chimique
+offir;plaisir;fleur;être vivant;souvent;émotionnel
+fapper;douleur;objet;être vivant;souvent;émotionnel
+apprendre;tristesse;décès;personne;souvent;émotionnel
+apprendre;joie;décès;personne;rarement;émotionnel
+empécher;fatigue;reposer;être vivant;toujours;émotionnel
+découvrir;frustration;fausse;explication;souvent;émotionnel
+
+consommer;énergie;démarrer;moteur;toujours;chimique
+

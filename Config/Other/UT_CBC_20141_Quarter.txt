@@ -1,0 +1,17 @@
+SimpleUT("Quelle est la capitale de l'Italie?", "*rome*");
+SimpleUT("Celle d'Allemagne?", "*berlin*");
+SimpleUT("Comment utilise tu twitter", "");
+SimpleUT("Qu'est ce que twitter", "");
+SimpleUT("si aujourd'hui est samedi quel jour serons nous demain", "");
+SimpleUT("es tu fan de sports?", "");
+SimpleUT("penses tu que je suis mignon", "");
+SimpleUT("je suis athé", "");
+SimpleUT("j'ai mal à la tête", "");
+SimpleUT("j'ai faim", "");
+SimpleUT("a quoi servent les timbres?", "");
+SimpleUT("je pense que tu es stupide", "");
+SimpleUT("je suis désolé d'avoir dis que tu étais stupide.", "");
+SimpleUT("qui est ta personne favorite?", "");
+SimpleUT("comment définis tu l'amour véritable", "");
+SimpleUT("Que fait un entrepreneur de pompes funèbres? ", "");
+SimpleUT("Dis-moi une énigme.", "");

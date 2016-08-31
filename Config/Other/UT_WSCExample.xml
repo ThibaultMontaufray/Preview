@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="WSExamples.xsl"?>
+<!-- http://www.cs.nyu.edu/faculty/davise/papers/WSCExample.xml -->
+<!-- http://commonsensereasoning.org/winograd.html -->
+
+<collection>
+	<schema>
+		<text>
+		Les conseillers municipaux ont refusé les manifestants un permis parce que
+		Ils ont craint la violence.
+		</text>
+		<question>Qui a craint la violence ?</question>
+		<answer1>Les conseillers municipaux</answer1> 
+		<answer2>les manifestants.</answer2>
+	</schema>
+	<schema>
+		<text>
+		Le trophée n'entre pas dans la valise brune parce que c'est trop petit. </text> 
+		<question> Qu'est-ce qui est trop petit ? </question>
+		<answer1>Le trophée</answer1>
+		<answer2>la valise</answer2> 
+	</schema>
+	<schema>
+		<text>
+		Joan s'est assurée de remercier Susan pour toute l'aide qu'elle avait donnée. </text>
+		<question> Qui avait donné l'aide ? </question>
+		<answer1>Joan</answer1>
+		<answer2>Susan</answer2>
+	</schema>
+	<schema>
+		<text>
+		Paul a essayé d'appeler George au téléphone, mais il n'a pas eu du succès. </text>
+		<question> Qui n'a pas eu du succès ? </question>
+		<answer1>Paul</answer1>
+		<answer2>George</answer2>
+	</schema>
+	<schema>
+		<text>
+		L'avocat a posé une question au témoin, mais il était réticent pour la répéter.
+		</text>
+		<question> Qui était réticent à répéter la question ? </question>
+		<answer1> L'avocat </answer1>
+		<answer2> Le témoin </answer2>
+	</schema>
+</collection>

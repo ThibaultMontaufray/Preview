@@ -1,0 +1,7 @@
+niveau;source;operateur;parametre;target
+0;chiffre;cast;int;val
+0;val;/;1;reste
+0;;for;=1000000000|>=1|/=1000;i
+1;reste;/;i;y
+1;y;if;!=0;
+2;
