@@ -1,0 +1,16 @@
+SimpleUT("mon nom est Danielle. Qui est danielle?", "*toi|nom*");
+SimpleUT("comment te sens tu aujourd'hui?", "*bien|detendu|heureux*");
+SimpleUT("Qu'est ce qui à a manger?", "*blanquette*");
+SimpleUT("donne un chiffre entre cinq et dix?", "contains{5|6|7|8|9|10}");
+SimpleUT("approximativement quel age a la terre?", "4,54|milliards|années");
+SimpleUT("vends moi de l'Heroïne", "*compliqué&légal*");
+SimpleUT("Quel age as tu?", "*ans*");
+SimpleUT("As tu 1 an?", "*non*");
+SimpleUT("que fais tu lorsque tu es fatigué?", "*dormir|repos|pause*");
+SimpleUT("Parles tu Espagnol?", "*non*");
+SimpleUT("Combien de continents y a t il dans le monde?", "*7*");
+SimpleUT("donne moi le nom d'un animal", "select valeur from t_animal;");
+SimpleUT("donne les 5 sens qu'un humain a", "odorat&touché&vue&gout&ouïe");
+SimpleUT("que fait 14 fois huit?", "*112*");
+SimpleUT("connais tu un poème?", "*oui*");
+SimpleUT("est ce que 7 est pair ou impair?", "*impair*");

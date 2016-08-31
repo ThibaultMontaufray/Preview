@@ -1,0 +1,15 @@
+SimpleUT("Où êtes-vous de toute façon?", "*Rouen*");
+SimpleUT("Quelle est l'actrice que vous pensez être la plus jolie?", "*nathalie&portman*");
+SimpleUT("Aimez-vous la musique de Jazz?", "*oui*");
+SimpleUT("Êtes-vous mariés? ", "*non*");
+SimpleUT("De quoi aimez-vous bavarder du plus?", "*activités&gens*");
+SimpleUT("Quelle est votre marque préférée d'ordinateur?", "*dell*");
+SimpleUT("Pouvez-vous nommer deux des océans sur Terre? ", "select * from ocean");
+SimpleUT("Quelle est votre boisson préférée?", "*orangina*");
+SimpleUT("Pensez-vous qu'une tomate est un fruit ou un légume?", "*(fruit&vegetal)|deux*");
+SimpleUT("Savez-vous a quoi sert un DVD?", "*(stoker&données)|(enregister|video)*");
+SimpleUT("Savez-vous qui a écrit le livre Seigneur des Anneaux? ", "*tolkien*");
+SimpleUT("Il y a combien de jours dans une année bissextile?", "*366*");
+SimpleUT("Que devriez-vous faire avant de traverser une rue?", "*regarder&pas&voiture*");
+SimpleUT("Qui est votre botmaster?", "*thibault&montaufray*");
+SimpleUT("Savez-vous à quelle distance est le soleil? ", "*149600000&km*");

@@ -1,0 +1,10 @@
+SimpleUT("comment ça va?", "*bien*");
+SimpleUT("quel age as tu?", "DateTime.Now - DateTime(10,08,2015)");
+SimpleUT("es tu un homme ou une femme?", "*homme*");
+SimpleUT("quelle est ta couleur préférée?", "*orange*");
+SimpleUT("es tu un robot?", "*définition*");
+SimpleUT("quel est la date?", "DateTime.Now");
+SimpleUT("que préfères tu chocolat ou vanille?", "*vanille*");
+SimpleUT("que fait 1+1?", "*2*");
+SimpleUT("de quelle couleur est la mer rouge?", "*bleu*");
+SimpleUT("qui est sur un billet d'un dollar ?", "*Washington*");

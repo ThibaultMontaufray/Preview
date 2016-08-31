@@ -1,0 +1,15 @@
+SimpleUT("Un pamplemousse est un fruit ou un végétal?", "*fruit*");
+SimpleUT("Est ce qu'un avion peut voler?", "*oui*");
+SimpleUT("Donnes le nom d'un fleuve dans le monde?", "contains{select value from t_mot}");
+SimpleUT("qu'est ce qui est le plus grand une vache adulte ou une girafe adulte.", "*giraffe*");
+SimpleUT("Que veux dire UFO?", "*wiki*");
+SimpleUT("Est ce que fumer cause le cancer?", "*oui*");
+SimpleUT("Quelle planète dans notre système solaire est la plus grande?", "*jupiter*");
+SimpleUT("Est-ce que 18 est une lettre ou un nombre?", "*nombre*");
+SimpleUT("A quoi sert le dentifrice?", "*dent*");
+SimpleUT("Que fait 25 + cinq divisé par 5?", "*6|26*");
+SimpleUT("Si Jim a 8 et John a 7 qui est le plus vieux?", "*jim*");
+SimpleUT("Si quelqu'un que tu aimes meurt comment tu sentiras tu?", "*triste*");
+SimpleUT("Que signifie être divorcé?", "*marié|séparé*");
+SimpleUT("Quel est l'opposé de gros?", "*petit|mince*");
+SimpleUT("Mon nom est Tom Smith. Quel est mon prénom?", "*tom*");

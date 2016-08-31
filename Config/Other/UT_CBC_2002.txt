@@ -1,0 +1,10 @@
+SimpleUT("ou es tu?", "*rouen*");
+SimpleUT("es tu nerveux?", "*toujours*");
+SimpleUT("aimes tu parler aux gens?", "*oui*");
+SimpleUT("quelle est la capitale de la france?", "*paris*");
+SimpleUT("quand est ce que le premier homme a marché sur la lune?", "*20&juillet&1969*");
+SimpleUT("que penses tu de george bush?", "*connais&pas&president*");
+SimpleUT("peux tu dire une blague?", "*C'est l'histoire du ptit dej, vous la connaissez ? Pas de bol !*");
+SimpleUT("quel est ton personnage préféré de Star Wars?", "*WA-7*");
+SimpleUT("comment puis-je faire un chatbot?", "*programme&reactions&humaines*");
+SimpleUT("puis-je avoir une photo de toi?", "*non&personnel*");

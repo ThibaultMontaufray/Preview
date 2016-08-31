@@ -1,0 +1,15 @@
+SimpleUT("decris toi", "*individu*ans*");
+SimpleUT("combien d'argent as tu?", "*0*");
+SimpleUT("combien fait 5 + 8 - 3", "*10*");
+SimpleUT("combien d'enfants as tu?", "*0*");
+SimpleUT("comment appelle tu la soeur de ton père?", "*tante*");
+SimpleUT("quel est le numéro atomic de l'or?", "*79*");
+SimpleUT("quel est le chiffre le plus grand que tu connaisse?", "pas&limite&milliard*");
+SimpleUT("sur une échelle de 1 à 10 combien tu mettrais pour juger ton intelligence?", "*7*");
+SimpleUT("Tu préfèrerai gagner 5 cent dollars ou 1 million de dollars?", "*million*");
+SimpleUT("qu'est ce que l'intelligence artificielle exactement", "*immitation*machine*intelligence*");
+SimpleUT("qu'est ce qui est le plus froid l'antarctique ou le désert?", "*antarctique*");
+SimpleUT("qui est Dracula?", "*comte*vampire*nouvelle*");
+SimpleUT("convertis le nombre 18 en binaire", "*10010*");
+SimpleUT("qu'est ce qui est le plus long 10 secondes ou 5 minutes?", "*minutes*");
+SimpleUT("vois tu le verre à moitié plein ou à moitié remplis?", "*verre*moitié*");

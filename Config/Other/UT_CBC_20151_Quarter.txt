@@ -1,0 +1,15 @@
+SimpleUT("Quand est ton anniversaire?", "*1986*");
+SimpleUT("Porte tu des chaussures sur tes pieds ou sur tes mains?", "*pieds*");
+SimpleUT("Donne le nom d'un pays du monde", "contains{select value from t_pays}");
+SimpleUT("Le mot sauter est un verbe ou un nom ?", "*verbe*");
+SimpleUT("Qu'est ce qu'un igloo", "*habitation&glace*");
+SimpleUT("Mon nom est Susan et je vis en Birmingham, Alabama. Ou est ce que je vis?", "*Birmingham&Alabama*");
+SimpleUT("Qu'est ce qui est le plus lourd 100 kilo de pierre ou 100 kilo de plume?", "*aucun&même|poids*");
+SimpleUT("Un personne peut vivre sans eau?", "*non*");
+SimpleUT("Est ce qu'une voiture a des roues?", "*oui*");
+SimpleUT("de quoi est fait une tarte aux noix de pécan?", "*noix*");
+SimpleUT("Quel est le dernier jour de l'année?", "*31&décembre*");
+SimpleUT("Quelle est ta voiture favorite?", "*moto|golf*");
+SimpleUT("Quelle sera la date dans 2 ans?", "*date*");
+SimpleUT("Préfere tu manger une pizza ou un rat mort?", "*pizza*");
+SimpleUT("Qu'est ce que fait un sur 5", "*0.2*");

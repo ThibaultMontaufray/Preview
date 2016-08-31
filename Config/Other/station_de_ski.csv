@@ -1,0 +1,153 @@
+Station;Region;Département;forfait ski 5 jours adulte;piste verte;piste bleu;piste rouge;piste noire;nombre de pistes;altitude minimum;altitude maximum;dénivelé;piste la plus longue;neige de culture;télésiège 2 places;télésiète 4 places;Tire fesse
+Chamonix;Haute Savoie;Alpes du Nord;246;15;36;40;15;106;1042m;3275m;2233m;19km;0ha;4;6;18
+Avoriaz;Haute Savoie;Alpes du Nord;247.5;6;24;15;6;51;1800m;2460m;1260m;0km;57ha;2;0;14
+Chamonix - Argentière;Haute Savoie;Alpes du Nord;246;15;36;40;15;106;1042m;3275m;2233m;19km;0ha;4;6;18
+Chamonix - Les Houches;Haute Savoie;Alpes du Nord;246;15;36;40;15;106;1042m;3275m;2233m;19km;0ha;4;6;18
+Chamonix - Vallorcine;Haute Savoie;Alpes du Nord;246;15;36;40;15;106;1042m;3275m;2233m;19km;0ha;4;6;18
+Châtel;Haute Savoie;Alpes du Nord;190;9;16;15;6;46;1100m;2200m;1100m;3.7km;30ha;0;2;28
+Combloux;Haute Savoie;Alpes du Nord;166;12;17;28;7;64;1020m;1930m;910m;5.5km;17ha;0;6;22
+Evian Les Bains;Haute Savoie;Alpes du Nord;0;1;2;1;1;5;1250m;1700m;450m;9.5km;;0;0;0
+Flaine;Haute Savoie;Alpes du Nord;237;8;26;25;5;64;1600m;2500m;1600m;14km;0ha;3;2;10
+La Chapelle d'Abondance;Haute Savoie;Alpes du Nord;140;5;16;10;0;31;1000m;1800m;800m;0km;0ha;5;2;12
+La Clusaz;Haute Savoie;Alpes du Nord;156.8;18;30;29;7;84;1040m;2500m;1500m;2km;88ha;4;7;28
+Le Grand Bornand;Haute Savoie;Alpes du Nord;170;12;14;13;3;42;1000m;2100m;1100m;3km;86ha;2;3;17
+Le Praz de Lys;Haute Savoie;Alpes du Nord;129;7;3;7;3;20;1350m;1860m;510m;0km;8ha;0;1;9
+Les Carroz d'Araches;Haute Savoie;Alpes du Nord;205.2;4;3;4;3;14;1010m;1258m;248m;0.6km;6ha;0;0;5
+Les Contamines Montjoie;Haute Savoie;Alpes du Nord;191.5;8;12;18;10;48;1160m;2450m;1290m;10km;50ha;0;2;12
+Les Gets;Haute Savoie;Alpes du Nord;191;3;28;29;9;69;1172m;2002m;830m;0km;126ha;2;5;20
+Lugrin;Haute Savoie;Alpes du Nord;216;4;13;7;6;30;1440m;2260m;820m;0km;47ha;0;2;10
+Manigod - l'Etale;Haute Savoie;Alpes du Nord;116.3;5;13;15;1;34;1500m;1810m;310m;0km;19ha;2;2;13
+Megève;Haute Savoie;Alpes du Nord;225;35;53;71;24;183;1050m;2350m;1300m;0km;172ha;3;8;57
+Morillon;Haute Savoie;Alpes du Nord;205.2;2;9;5;1;17;1100m;2500m;1400m;14km;;0;2;4
+Morzine;Haute Savoie;Alpes du Nord;132;6;54;42;15;117;1000m;2466m;1466m;0km;98ha;0;46;31
+Praz sur Arly;Haute Savoie;Alpes du Nord;155;34;59;47;11;151;1035m;2069m;1034m;0km;;0;4;9
+Saint Gervais Mont Blanc;Haute Savoie;Alpes du Nord;170.5;2;5;12;2;21;1400m;1920m;520m;3km;0ha;1;0;6
+Samoens;Haute Savoie;Alpes du Nord;162.5;6;12;10;2;30;1750m;2800m;1050m;1km;50ha;0;1;11
+Allevard Les Bains;Isère;Alpes du Nord;;5;9;7;4;25;1500m;2100m;700m;3km;23ha;1;2;8
+Alpe d'Huez;Isère;Alpes du Nord;;41;38;39;17;135;1860m;3300m;1440m;16km;275ha;5;8;35
+Auris en Oisans;Isère;Alpes du Nord;;5;9;7;3;24;1600m;3300m;1730m;16km;275ha;2;2;4
+Autrans;Isère;Alpes du Nord;;7;4;8;2;21;1050m;1710m;660m;1.5km;0ha;0;1;10
+Chamrousse;Isère;Alpes du Nord;168.2;8;13;14;6;41;1400m;2250m;850m;3km;11ha;0;2;10
+Gresse En Vercors;Isère;Alpes du Nord;99.5;9;6;8;3;26;1245m;1751m;506m;11km;0ha;1;0;9
+Les 2 Alpes;Isère;Alpes du Nord;237;2;2;2;0;6;1350m;3600m;1950m;16km;0ha;1;8;18
+Les 7 Laux - Le Pleynet;Isère;Alpes du Nord;175;2;2;2;;6;960m;1350m;390m;1.5km;0ha;0;0;5
+Les 7 Laux - Prapoutel;Isère;Alpes du Nord;175;2;2;2;0;6;960m;1350m;390m;1.5km;0ha;0;0;5
+Oz en Oisans;Isère;Alpes du Nord;164;7;11;9;3;30;1100m;2800m;1700m;16km;275ha;0;3;11
+Vaujany;Isère;Alpes du Nord;164;7;11;9;3;30;1650m;2800m;1150m;16km;275ha;0;3;11
+Courchevel;Savoie;Alpes du Nord;245;19;37;31;8;95;1350m;2738m;1388m;9km;282ha;0;3;29
+La Plagne;Savoie;Alpes du Nord;246;10;69;33;18;130;1250m;3250m;2000m;6km;132ha;4;9;60
+Les Arcs;Savoie;Alpes du Nord;250;1;54;34;18;107;1200m;3226m;2026m;7km;105ha;2;4;25
+Tignes;Savoie;Alpes du Nord;180;6;34;21;16;77;1550m;3450m;1900m;5km;0ha;0;6;13
+Albertville - Mercury;Savoie;Alpes du Nord;;8;23;6;4;41;1000m;1900m;900m;0km;0ha;0;2;16
+Albiez-Montrond;Savoie;Alpes du Nord;;5;9;7;4;25;1500m;2100m;700m;3km;23ha;1;2;8
+Arc 1600;Savoie;Alpes du Nord;;6;6;4;1;17;1350m;1807m;557m;5km;0ha;0;2;11
+Arc 1800;Savoie;Alpes du Nord;;6;6;4;1;17;1350m;1807m;557m;5km;0ha;0;2;11
+Arc 1950;Savoie;Alpes du Nord;;6;6;4;1;17;1350m;1807m;557m;5km;0ha;0;2;11
+Arc 2000;Savoie;Alpes du Nord;;6;6;4;1;17;1350m;1807m;557m;5km;0ha;0;2;11
+Arêches Beaufort;Savoie;Alpes du Nord;;2;11;12;4;29;1080m;2320m;1220m;5km;0ha;0;2;9
+Aussois;Savoie;Alpes du Nord;;5;6;7;3;21;1500m;2750m;1250m;3.4km;10ha;2;0;4
+Bessans;Savoie;Alpes du Nord;;1;2;0;0;3;1740m;2000m;260m;0km;;0;0;2
+Bonneval sur Arc;Savoie;Alpes du Nord;;5;9;5;2;21;1800m;3000m;1200m;0km;0ha;0;3;8
+Bourg St Maurice - Les Arcs;Savoie;Alpes du Nord;;5;9;5;2;21;1800m;3000m;1200m;0km;0ha;0;3;8
+Brides les Bains;Savoie;Alpes du Nord;;8;27;24;7;66;600m;2950m;2350m;1.2km;101ha;0;3;10
+Celliers;Savoie;Alpes du Nord;;5;2;7;1;15;1680m;2500m;770m;1km;13ha;0;0;5
+Champagny en Vanoise;Savoie;Alpes du Nord;84;9;63;34;19;125;1250m;3250m;2000m;7.5km;0ha;4;16;52
+Courchevel 1350;Savoie;Alpes du Nord;;19;37;31;8;95;1350m;2738m;1388m;9km;282ha;0;3;29
+Courchevel 1550;Savoie;Alpes du Nord;;19;37;31;8;95;1350m;2738m;1388m;9km;282ha;0;3;29
+Courchevel 1650;Savoie;Alpes du Nord;;19;37;31;8;95;1350m;2738m;1388m;9km;282ha;0;3;29
+Courchevel 1850;Savoie;Alpes du Nord;;19;37;31;8;95;1350m;2738m;1388m;9km;282ha;0;3;29
+Crest Voland;Savoie;Alpes du Nord;;19;37;31;8;95;1350m;2738m;1388m;9km;282ha;0;3;29
+Doucy Valmorel;Savoie;Alpes du Nord;;14;26;11;5;56;1400m;2550m;1150m;0km;0ha;2;2;21
+Flumet;Savoie;Alpes du Nord;;8;26;25;5;64;1600m;2500m;1600m;14km;0ha;3;2;10
+La Feclaz;Savoie;Alpes du Nord;156.8;2;5;1;1;9;1250m;1511m;261m;0km;0ha;0;0;5
+La Norma;Savoie;Alpes du Nord;149;7;7;11;2;27;1350m;2750m;1400m;0km;0ha;0;0;6
+La Plagne - Belle Plagne;Savoie;Alpes du Nord;246;10;69;33;18;130;1250m;3250m;2000m;6km;132ha;4;9;60
+La Plagne - Les Coches;Savoie;Alpes du Nord;246;10;69;33;18;130;1250m;3250m;2000m;6km;132ha;4;9;60
+La Plagne - Montchavin;Savoie;Alpes du Nord;246;10;69;33;18;130;1250m;3250m;2000m;6km;132ha;4;9;60
+La Plagne - Plagne 1800;Savoie;Alpes du Nord;246;10;69;33;18;130;1250m;3250m;2000m;6km;132ha;4;9;60
+La Plagne - Plagne Aime 2000;Savoie;Alpes du Nord;246;10;69;33;18;130;1250m;3250m;2000m;6km;132ha;4;9;60
+La Plagne - Plagne Bellecote;Savoie;Alpes du Nord;246;10;69;33;18;130;1250m;3250m;2000m;6km;132ha;4;9;60
+La Plagne - Plagne Centre;Savoie;Alpes du Nord;246;10;69;33;18;130;1250m;3250m;2000m;6km;132ha;4;9;60
+La Plagne - Plagne Montalbert;Savoie;Alpes du Nord;246;10;69;33;18;130;1250m;3250m;2000m;6km;132ha;4;9;60
+La Plagne - Plagne Villages / Plagne Soleil;Savoie;Alpes du Nord;246;10;69;33;18;130;1250m;3250m;2000m;6km;132ha;4;9;60
+La Rosière;Savoie;Alpes du Nord;;10;69;33;18;130;950m;1148m;198m;1km;0ha;0;0;5
+La Tania;Savoie;Alpes du Nord;245;21;39;41;10;111;1350m;2732m;1382m;0km;218ha;0;3;29
+La Toussuire;Savoie;Alpes du Nord;216;30;61;46;12;149;1100m;2620m;1520m;5km;;0;15;47
+Le Corbier;Savoie;Alpes du Nord;216;30;61;46;11;148;1100m;2620m;1520m;5km;;0;15;47
+Les Bottières;Savoie;Alpes du Nord;216;30;61;46;12;149;1280m;2209m;929m;3km;;0;15;47
+Les Karellis;Savoie;Alpes du Nord;142;6;7;11;4;28;1600m;2520m;920m;0km;23ha;1;3;10
+Les Menuires;Savoie;Alpes du Nord;228;12;43;24;8;87;1450m;2850m;1400m;0km;1785ha;1;3;12
+Les Saisies;Savoie;Alpes du Nord;178;9;29;16;6;60;1150m;2069m;919m;0km;;0;11;15
+Les Saisies - Hauteluce;Savoie;Alpes du Nord;178;9;29;16;6;60;1150m;2069m;919m;0km;;0;11;15
+Méribel;Savoie;Alpes du Nord;;8;24;24;7;63;1100m;2952m;1852m;1.2km;217ha;0;1;11
+Méribel - Les Allues;Savoie;Alpes du Nord;;8;24;24;7;63;1100m;2952m;1852m;1.2km;217ha;0;1;11
+Méribel Village;Savoie;Alpes du Nord;;8;24;24;7;63;1100m;2952m;1852m;1.2km;217ha;0;1;11
+Méribel-Mottaret;Savoie;Alpes du Nord;;8;24;24;7;63;1100m;2952m;1852m;1.2km;217ha;0;1;11
+Notre Dame de Bellecombe;Savoie;Alpes du Nord;155;21;39;33;4;97;1150m;2070m;920m;0km;;5;7;30
+Orelle;Savoie;Alpes du Nord;233;11;30;31;8;80;900m;3200m;2300m;0km;;0;7;8
+Peisey - Vallandry;Savoie;Alpes du Nord;91;3;3;4;0;10;1350m;1700m;350m;0km;0ha;0;0;7
+Pralognan la Vanoise;Savoie;Alpes du Nord;141.5;9;4;7;4;24;1410m;2355m;945m;1km;0ha;0;0;7
+Saint Colomban des Villards;Savoie;Alpes du Nord;107;2;5;12;2;21;1400m;1920m;520m;3km;0ha;1;0;6
+Saint Francois Longchamp;Savoie;Alpes du Nord;107;2;5;12;2;21;1400m;1920m;520m;3km;0ha;1;0;6
+Saint Jean d'Arves;Savoie;Alpes du Nord;216;30;61;46;12;149;1100m;2620m;1520m;5km;0ha;0;15;47
+Saint Martin de Belleville;Savoie;Alpes du Nord;228;12;37;24;8;81;1450m;2850m;1400m;3km;;1;3;12
+Saint Sorlin d'Arves;Savoie;Alpes du Nord;216;30;61;46;12;149;1100m;2620m;1520m;6km;0ha;0;15;47
+Sainte Foy Tarentaise;Savoie;Alpes du Nord;162.5;6;12;10;2;30;1750m;2800m;1050m;1km;50ha;0;1;11
+Termignon la Vanoise;Savoie;Alpes du Nord;175.5;9;27;14;5;55;1500m;2500m;1000m;0km;0ha;0;1;17
+Tignes - Le Lac / Le Lavachet;Savoie;Alpes du Nord;180;6;34;21;16;77;1550m;3450m;1900m;5km;0ha;0;6;13
+Tignes - Les Boisses;Savoie;Alpes du Nord;180;6;34;21;16;77;1550m;3450m;1900m;5km;0ha;0;6;13
+Tignes - Les Brevières;Savoie;Alpes du Nord;180;6;34;21;16;77;1550m;3450m;1900m;5km;0ha;0;6;13
+Tignes - Val Claret;Savoie;Alpes du Nord;180;6;34;21;16;77;1550m;3450m;1900m;5km;0ha;0;6;13
+Val Cenis;Savoie;Alpes du Nord;75;1;2;1;0;4;1600m;1920m;320m;0.8km;;0;0;3
+Val d'Isere;Savoie;Alpes du Nord;47.5;3;3;3;1;10;1350m;1600m;250m;29.9km;;0;0;2
+Val Thorens;Savoie;Alpes du Nord;270;11;31;27;9;78;1850m;3456m;1606m;0km;0ha;6;4;15
+ValFrejus;Savoie;Alpes du Nord;62;11;31;27;9;78;2300m;3230m;930m;3.5km;49ha;0;1;8
+Valloire;Savoie;Alpes du Nord;190;11;31;27;9;78;2300m;3230m;930m;3.5km;49ha;0;1;8
+Valmeinier;Savoie;Alpes du Nord;190;11;31;27;9;78;2300m;3230m;930m;3.5km;49ha;0;1;8
+Valmorel;Savoie;Alpes du Nord;218;11;31;27;9;78;2300m;3230m;930m;3.5km;49ha;0;1;8
+Villaroger;Savoie;Alpes du Nord;171;4;4;2;1;11;1480m;3300m;1850m;16km;275ha;0;0;6
+Chabanon - Selonnet;Alpes de Haute Provence;Alpes du sud;;11;6;16;2;35;1550m;2050m;500m;3km;0ha;1;0;10
+Jausiers;Alpes de Haute Provence;Alpes du sud;;7;21;12;3;43;2000m;2610m;800m;0km;0ha;3;2;10
+Le Lauzet Ubaye;Alpes de Haute Provence;Alpes du sud;110;5;1;6;1;13;900m;1200m;300m;3km;;0;0;6
+Pra Loup;Alpes de Haute Provence;Alpes du sud;154;11;7;11;6;35;1600m;2500m;900m;12km;0ha;2;1;6
+Saint Jean Montclar;Alpes de Haute Provence;Alpes du sud;139.5;4;13;11;5;33;1350m;2500m;1150m;0km;0ha;2;0;8
+Seyne Les Alpes;Alpes de Haute Provence;Alpes du sud;73.5;2;2;3;1;8;1480m;2100m;620m;2.5km;5ha;0;0;4
+Val d'Allos 1800 - La Foux;Alpes de Haute Provence;Alpes du sud;170;2;9;9;4;24;1500m;2425m;925m;0km;0ha;1;1;5
+Guillaumes;Alpes Maritimes;Alpes du sud;;9;6;8;3;26;1245m;1751m;506m;11km;0ha;1;0;9
+Isola 2000;Alpes Maritimes;Alpes du sud;;7;21;12;3;43;2000m;2610m;800m;0km;0ha;3;2;10
+Valberg;Alpes Maritimes;Alpes du sud;161.7;11;31;27;9;78;1850m;3456m;1606m;0km;0ha;6;4;15
+Serre Chevalier;Hautes Alpes;Alpes du sud;245;23;29;35;13;100;1200m;2800m;1600m;0km;154ha;1;7;34
+Abriès en Queyras;Hautes Alpes;Alpes du sud;;6;6;11;1;24;1550m;2450m;900m;1km;14ha;0;1;8
+Ancelle;Hautes Alpes;Alpes du sud;;6;6;4;1;17;1350m;1807m;557m;5km;0ha;0;2;11
+Arvieux en Queyras;Hautes Alpes;Alpes du sud;;7;1;5;1;14;1680m;2100m;420m;1km;10ha;0;0;4
+Ceillac en Queyras;Hautes Alpes;Alpes du sud;;5;2;7;1;15;1680m;2500m;770m;1km;13ha;0;0;5
+Chaillol;Hautes Alpes;Alpes du sud;;3;5;4;0;12;1600m;2000m;400m;0km;;0;2;6
+Chorges;Hautes Alpes;Alpes du sud;;9;16;15;6;46;1100m;2200m;1100m;3.7km;30ha;0;2;28
+Embrun;Hautes Alpes;Alpes du sud;;14;26;11;5;56;1400m;2550m;1150m;0km;0ha;2;2;21
+La Joue du Loup;Hautes Alpes;Alpes du sud;;0;1;0;0;1;1450m;3550m;2100m;0km;0ha;0;0;1
+Les Orres;Hautes Alpes;Alpes du sud;178;7;6;20;4;37;1550m;2720m;1170m;7.2km;110ha;2;3;10
+Molines en Queyras;Hautes Alpes;Alpes du sud;141;6;12;10;2;30;1750m;2900m;1150m;1km;50ha;0;1;11
+Montgenèvre;Hautes Alpes;Alpes du sud;132;10;12;15;9;46;1860m;2700m;840m;5km;;2;13;7
+Orcières 1400;Hautes Alpes;Alpes du sud;155;21;39;33;4;97;1150m;2070m;920m;0km;;5;7;30
+Orcières 1850;Hautes Alpes;Alpes du sud;155;21;39;33;4;97;1150m;2070m;920m;0km;;5;7;30
+Puy Saint Vincent;Hautes Alpes;Alpes du sud;157;6;14;12;2;34;1400m;2700m;1300m;5km;39ha;1;4;4
+Réallon;Hautes Alpes;Alpes du sud;107;4;6;3;1;14;1560m;2115m;555m;0km;;0;2;4
+Risoul;Hautes Alpes;Alpes du sud;194;11;17;13;3;44;1850m;2750m;900m;0km;;1;4;17
+Saint Léger les Mélèzes;Hautes Alpes;Alpes du sud;97.5;8;3;4;1;16;1260m;2000m;740m;0km;;0;2;6
+Serre Chevalier 1200 - Briançon;Hautes Alpes;Alpes du sud;245;23;29;35;13;100;1200m;2800m;1600m;0km;154ha;1;7;34
+Serre Chevalier 1350 - Chantemerle;Hautes Alpes;Alpes du sud;245;23;29;35;13;100;1200m;2800m;1600m;0km;154ha;1;7;34
+Serre Chevalier 1400 - Villeneuve;Hautes Alpes;Alpes du sud;245;23;29;35;13;100;1200m;2800m;1600m;0km;154ha;1;7;34
+Serre Chevalier 1500 - Monetier les bains;Hautes Alpes;Alpes du sud;245;23;29;35;13;100;1200m;2800m;1600m;0km;154ha;1;7;34
+Sigoyer;Hautes Alpes;Alpes du sud;73.5;2;2;3;1;8;1480m;2100m;620m;2.5km;5ha;0;0;4
+SuperDévoluy;Hautes Alpes;Alpes du sud;216;30;61;46;12;149;1100m;2620m;1520m;5km;;0;4;5
+Vallouise;Hautes Alpes;Alpes du sud;190;11;31;27;9;78;2300m;3230m;930m;3.5km;49ha;0;1;8
+Vars;Hautes Alpes;Alpes du sud;194;21;45;42;10;118;1650m;2750m;1100m;0km;0ha;4;6;31
+Villar d'Arène;Hautes Alpes;Alpes du sud;;2;3;3;1;9;870m;1110m;240m;1km;;0;0;6
+Lelex;Ain;Jura;;2;2;2;0;6;980m;1600m;620m;0km;;0;0;6
+Chapelle-des-bois;Doubs;Jura;;8;13;14;6;41;1400m;2250m;850m;3km;11ha;0;2;10
+Métabief;Doubs;Jura;;8;24;24;7;63;1100m;2952m;1852m;1.2km;217ha;0;1;11
+Bellefontaine;Jura;Jura;;1;4;6;3;14;1800m;2000m;200m;0km;;0;0;2
+Bois d'Amont;Jura;Jura;;11;11;28;6;56;1430m;2100m;670m;2km;;0;3;16
+Les Rousses;Jura;Jura;;18;17;14;5;54;1120m;1680m;560m;2km;18ha;0;3;29
+Maisod;Jura;Jura;;3;4;18;3;28;1680m;2500m;820m;0km;;2;3;5
+Premanon;Jura;Jura;155;34;59;47;11;151;1035m;2069m;1034m;0km;;0;4;9

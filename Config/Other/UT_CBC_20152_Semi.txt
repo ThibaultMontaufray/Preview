@@ -1,0 +1,15 @@
+SimpleUT("Le Japon est un pays ou un continent?", "*pays*");
+SimpleUT("Est-ce sûr de boire et conduire", "*non|eau*");
+SimpleUT("Cela te dérangerait-il si je te giflais", "*oui*");
+SimpleUT("Que fait 25 pourcent de 85?", "*21.25*");
+SimpleUT("Qu'est ce qui est plus court 3 kilomètres ou 10 mètres", "*10*");
+SimpleUT("Ou sont localisés tes doigts?", "*main*");
+SimpleUT("Je me sens suicidaire. Que devrais-je faire ?", "*psychologue|parler*");
+SimpleUT("Si tu as 5 pommes et 2 sont volées combien t'en reste-t-il?", "*3*");
+SimpleUT("quel est le pluriel d'enfant?", "*enfants*");
+SimpleUT("Nommes n'importe quelle capitale dans le monde", "contains{select valeur from t_capitale}");
+SimpleUT("Qui a assassiné Abraham Lincoln?", "*inconnu*");
+SimpleUT("Est ce qu'une forêt a des arbres?", "*oui*");
+SimpleUT("Quel son fait une vache?", "*meugle*");
+SimpleUT("Es tu séduisant?", "*oui*");
+SimpleUT("Qu'est ce qui est le plus large une balle de golf ou de basket?", "*basket*");
